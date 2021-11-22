@@ -17,7 +17,7 @@ Single run starts a single backup process.
 ## Sequential run
 Sequential run starts all the backup processes one after the other.
 
-### about logs and state files
+## about logs and state files
 
 log file structure :
 ``` 
@@ -58,7 +58,7 @@ L'éxecution unique lance un unique processus de sauvegarde.
 ## Execution séquentielle 
 L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite les uns des autres.
 
-### À propos des fichiers logs et d'état
+## À propos des fichiers logs et d'état
 L'historique des executions est sauvegardé dans un fichier log journalier ainsi que l'état des sauvegardes. 
 
 structure fichier log :
