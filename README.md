@@ -5,6 +5,10 @@ Projet CESI A3 Programmation system november 2021
 
 EASY SAVE is a logiciel that help user saving their data.
 
+
+----
+
+
 # User Guide
 
 ## Single run
@@ -16,7 +20,7 @@ Sequential run starts all the backup processes one after the other.
 ### about logs and state files
 
 log file structure :
-` 
+``` 
 {
   "name":"",
   "sourceFile":"",
@@ -26,9 +30,9 @@ log file structure :
   "time":""
   
 }
-`
+```
 state file structure :
-`
+```
 {
   "name":"",
   "state":"",
@@ -41,7 +45,9 @@ state file structure :
   "sizeFileLeft":"",
   "time":""
 }
-`
+```
+
+----
 
 
 # Guide utilisateur 
@@ -56,7 +62,7 @@ L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite 
 L'historique des executions est sauvegardé dans un fichier log journalier ainsi que l'état des sauvegardes. 
 
 structure fichier log :
-` 
+```
 {
   "name":"",
   "sourceFile":"",
@@ -66,9 +72,9 @@ structure fichier log :
   "time":""
   
 }
-`
+```
 structure fichier état :
-`
+```
 {
   "name":"",
   "state":"",
@@ -81,4 +87,4 @@ structure fichier état :
   "sizeFileLeft":"",
   "time":""
 }
-`
+```
