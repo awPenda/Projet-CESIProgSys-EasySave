@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l9fyChWtWjqB5eSV6XK0vOeUUPOTwciQWAifRbZgov1LlLqSjSPrERJ66QprMFnSc08iFDGnBUqrLErVZ9apiw==",
+  "dgSpecHash": "IKe56zbn9DXsn4PZA8peChuIcowRGu/r8jw1QDuNuiH+iCOjdhGB6v14Th4s4AXd/p6HnwtsfUpM1OOfcFE5LQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Penda\\Documents\\GitHub\\CESIProgSys-EasySave\\EasySave\\EasySave.csproj",
+  "projectFilePath": "C:\\Users\\Penda\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\EasySave\\EasySave.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Penda\\.nuget\\packages\\consoletables\\2.4.2\\consoletables.2.4.2.nupkg.sha512",
     "C:\\Users\\Penda\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
