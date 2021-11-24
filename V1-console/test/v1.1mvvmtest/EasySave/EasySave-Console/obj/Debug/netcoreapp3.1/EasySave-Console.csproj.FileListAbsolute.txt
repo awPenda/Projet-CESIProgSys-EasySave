@@ -1,0 +1,13 @@
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.exe
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.deps.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.runtimeconfig.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.runtimeconfig.dev.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\bin\Debug\netcoreapp3.1\EasySave-Console.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.csprojAssemblyReference.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.AssemblyInfoInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.AssemblyInfo.cs
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.csproj.CoreCompileInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\v1.1mvvmtest\EasySave\EasySave-Console\obj\Debug\netcoreapp3.1\EasySave-Console.genruntimeconfig.cache
