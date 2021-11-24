@@ -88,6 +88,7 @@ namespace EasySave
                     File.Copy(Path.Combine(sourceFile, fName), Path.Combine(targetFile, fName), true);
                 }
                 // Delete source files that were copied
+                /*
                 foreach (string f in fileList)
                 {
                     File.Delete(f);
@@ -96,6 +97,7 @@ namespace EasySave
                 {
                     File.Delete(f);
                 }
+                */
             }
             //if there's any error display it
             catch (DirectoryNotFoundException dirNotFound)
