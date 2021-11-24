@@ -119,27 +119,15 @@ namespace EasySave
                                 break;
                         }
                     }
-                    else if (input == "2")
-                    {
-                        Console.WriteLine("En Cours de développement\n");
-                        /*
-                        var fibNumbers = new List<int> { 0, 1, 1, 2, 3, 5, 8, 13 };
-                        foreach (int element in fibNumbers)
-                        {
-                            Console.Write($"{element} ");
-                        }
-                        */
+                    else if (input == "2"){
+                        //get number of json objects (its the number of save work saved in the json file)
                         var jsonData = File.ReadAllText(filePath);
                         var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
                         var countJsonObject = stateList.Count;
-                        Console.WriteLine($"countJsonObject : {countJsonObject}");
-
-                        for (int i=1; i< countJsonObject + 1; i++)
-                        {
-                            
+                        //for each object (implied each savework), execute save work
+                        for (int i=1; i< countJsonObject + 1; i++) {
                             travail.ExecuteWork(i);
                         }
-                        //Console.WriteLine($" nb of work : {travail.nbWork}");
                     }
                     else
                     {

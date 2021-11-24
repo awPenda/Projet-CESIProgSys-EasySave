@@ -71,8 +71,6 @@ namespace EasySave
         }
         static void SaveFilesFunction(string sourceFile, string targetFile)
         {
-            //the source file and target file, remplace it by yours (im not sure but i think i've taken the same var names than you)
-
             try
             {
                 //get each files in the directory
@@ -87,14 +85,12 @@ namespace EasySave
                     // first source dir, snd target dir, last true or false for the sub dirs 
                     File.Copy(Path.Combine(sourceFile, fName), Path.Combine(targetFile, fName), true);
                 }
-                // Delete source files that were copied
+                // Delete source files that were copied (maybe that can be interesting ?)
                 /*
-                foreach (string f in fileList)
-                {
+                foreach (string f in fileList){
                     File.Delete(f);
                 }
-                foreach (string f in fileList)
-                {
+                foreach (string f in fileList){
                     File.Delete(f);
                 }
                 */
