@@ -11,7 +11,7 @@ namespace EasySave
     class Travail : Etat
     {
         public Travail()
-        { }
+        {}
         public Travail(string theName, string therepS, string therepC, string theType)
         {
             name = theName;
@@ -107,24 +107,26 @@ namespace EasySave
 
         }
 
-        public void ExecuteWork(string inputUtilisateur)
+        public void ExecuteWork(int inputUtilisateur)
         {
             var jsonData = File.ReadAllText(filePath);
+
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
 
-            if (stateList.Count >= Convert.ToInt32(inputUtilisateur))
+
+            if (stateList.Count >= inputUtilisateur)
             {
-                string sourceDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).SourceFilePath;
-                string backupDir = stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).TargetFilePath;
+                string sourceDir = stateList.ElementAt(inputUtilisateur - 1).SourceFilePath;
+                string backupDir = stateList.ElementAt(inputUtilisateur - 1).TargetFilePath;
 
-                if (stateList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).Type == "Différentielle")
+                if (stateList.ElementAt(inputUtilisateur - 1).Type == "Différentielle")
                 {
-
+                    Console.WriteLine("Comming soon!");
                 }
                 else
                 {
                     SaveFilesFunction(sourceDir, backupDir);
-                    Console.WriteLine("Files copied !");
+                    Console.WriteLine("Files copied!");
                 }
 
             }
