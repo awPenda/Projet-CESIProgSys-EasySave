@@ -13,37 +13,48 @@ namespace testSaveFile
             string sourceFile = @"C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\files\sourceFile";
             string targetFile = @"C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\files\targetFile";
 
-            //just a comment to help me 
-            //Console.WriteLine($"sourceFile : {sourceFile},\n targetFile : {targetFile}");
-            // first source dir, snd target dir, last true or false for the sub dirs 
-            try{
+            SaveFilesFunction(sourceFile, targetFile);
+
+        }
+
+
+        static void SaveFilesFunction(string sourceFile, string targetFile)
+        {
+            //the source file and target file, remplace it by yours (im not sure but i think i've taken the same var names than you)
+            
+            try
+            {
                 //get each files in the directory
                 string[] fileList = Directory.GetFiles(sourceFile, "*");
                 //for each file
-                foreach (string i in fileList){
+                foreach (string i in fileList)
+                {
                     // isolate name from the path
                     string fName = i.Substring(sourceFile.Length + 1);
                     // Use the Path.Combine method to safely append the file name to the path
                     // Will overwrite if the destination file already exists
                     // first source dir, snd target dir, last true or false for the sub dirs 
                     File.Copy(Path.Combine(sourceFile, fName), Path.Combine(targetFile, fName), true);
-                    //just a comment to help me 
-                    //Console.WriteLine($"sourceFile {sourceFile}, \n targetFile {targetFile}, \n fName {fName}, \n  ");
                 }
                 // Delete source files that were copied
-                foreach (string f in fileList){
+                foreach (string f in fileList)
+                {
                     File.Delete(f);
                 }
-                foreach (string f in fileList){
+                foreach (string f in fileList)
+                {
                     File.Delete(f);
                 }
             }
             //if there's any error display it
-            catch (DirectoryNotFoundException dirNotFound){
+            catch (DirectoryNotFoundException dirNotFound)
+            {
                 Console.WriteLine(dirNotFound.Message);
             }
 
         }
 
     }
+
+    
 }
