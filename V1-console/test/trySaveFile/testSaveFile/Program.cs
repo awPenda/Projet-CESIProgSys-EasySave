@@ -27,23 +27,61 @@ namespace testSaveFile
             Console.WriteLine($"sourceFile : {sourceFile},\n targetFile : {targetFile}");
             //DirectoryCopy(sourceFile, targetFile, true);
 
-            if (!Directory.Exists(targetFile)){
-                Directory.CreateDirectory(targetFile);
-                Console.WriteLine($"creating {targetFile} ... ");
-            }
-            foreach (var srcPath in Directory.GetFiles(sourceFile)){
-                //Copy the file from sourcepath and place into mentioned target path, 
-                //Overwrite the file if same file is exist in target path
-                //does not work but idk why 
-                File.Copy(srcPath, srcPath.Replace(sourceFile, targetFile), true);
-                Console.WriteLine($"srcPath : {srcPath},\n sourceFile : {sourceFile},\n targetFile : {targetFile}, \n srcPath.Replace(sourceFile, targetFile) : {srcPath.Replace(sourceFile, targetFile)}");
-                Console.WriteLine($"srcPath : {srcPath},\n sourceFile : {sourceFile},\n targetFile : {targetFile}");
-            }
+            try{
+                //get each files in the directory
+                string[] fileList = Directory.GetFiles(sourceFile, "*");
 
-            Console.WriteLine($"copy finished !");
+                foreach (string i in fileList)
+                {
+                    // isolate name from the path
+                    string fName = i.Substring(sourceFile.Length + 1);
 
+                    // Use the Path.Combine method to safely append the file name to the path.
+                    // Will overwrite if the destination file already exists.
+                    File.Copy(Path.Combine(sourceFile, fName), Path.Combine(targetFile, fName), true);
+                    Console.WriteLine($"sourceFile {sourceFile}, \n targetFile {targetFile}, \n fName {fName}, \n  ");
+                }
+
+                // Delete source files that were copied.
+                foreach (string f in fileList)
+                {
+                    File.Delete(f);
+                }
+                foreach (string f in fileList)
+                {
+                    File.Delete(f);
+                }
+
+            }
+            catch (DirectoryNotFoundException dirNotFound){
+                Console.WriteLine(dirNotFound.Message);
+            }
 
         }
+
+        /*
+
+        if (!Directory.Exists(targetFile)){
+            Directory.CreateDirectory(targetFile);
+            Console.WriteLine($"creating {targetFile} ... ");
+        }
+        foreach (var srcPath in Directory.GetFiles(sourceFile)){
+            //Copy the file from sourcepath and place into mentioned target path, 
+            //Overwrite the file if same file is exist in target path
+            //does not work but idk why 
+            try{
+                File.Copy(srcPath, srcPath.Replace(sourceFile, targetFile), true);
+            }
+            catch (IOException copyError){
+                Console.WriteLine(copyError.Message);
+            }
+            Console.WriteLine($"srcPath : {srcPath},\n sourceFile : {sourceFile},\n targetFile : {targetFile}");
+        }
+
+        Console.WriteLine($"copy finished !");
+
+        */
+    
 
 
 
