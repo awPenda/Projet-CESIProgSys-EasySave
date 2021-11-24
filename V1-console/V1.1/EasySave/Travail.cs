@@ -26,6 +26,7 @@ namespace EasySave
         public void addWork(long filesize, int countfile)
         {
             var jsonData = File.ReadAllText(filePath);
+            Console.WriteLine($"state.json path {filePath}");
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
 
             if (stateList.Count < 5)
@@ -55,6 +56,7 @@ namespace EasySave
         }
         public void displayWorks()
         {
+
             var jsonData = File.ReadAllText(filePath);
             var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>();
 
@@ -67,6 +69,42 @@ namespace EasySave
             dt.Write();
 
         }
+        static void SaveFilesFunction(string sourceFile, string targetFile)
+        {
+            //the source file and target file, remplace it by yours (im not sure but i think i've taken the same var names than you)
+
+            try
+            {
+                //get each files in the directory
+                string[] fileList = Directory.GetFiles(sourceFile, "*");
+                //for each file
+                foreach (string i in fileList)
+                {
+                    // isolate name from the path
+                    string fName = i.Substring(sourceFile.Length + 1);
+                    // Use the Path.Combine method to safely append the file name to the path
+                    // Will overwrite if the destination file already exists
+                    // first source dir, snd target dir, last true or false for the sub dirs 
+                    File.Copy(Path.Combine(sourceFile, fName), Path.Combine(targetFile, fName), true);
+                }
+                // Delete source files that were copied
+                foreach (string f in fileList)
+                {
+                    File.Delete(f);
+                }
+                foreach (string f in fileList)
+                {
+                    File.Delete(f);
+                }
+            }
+            //if there's any error display it
+            catch (DirectoryNotFoundException dirNotFound)
+            {
+                Console.WriteLine(dirNotFound.Message);
+            }
+
+        }
+
         public void ExecuteWork(string inputUtilisateur)
         {
             var jsonData = File.ReadAllText(filePath);
@@ -83,7 +121,8 @@ namespace EasySave
                 }
                 else
                 {
-                    Console.WriteLine("En cours de développement");
+                    SaveFilesFunction(sourceDir, backupDir);
+                    Console.WriteLine("Files copied !");
                 }
 
             }
