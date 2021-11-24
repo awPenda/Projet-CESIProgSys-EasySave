@@ -38,8 +38,8 @@ namespace Projet
             {
                 if (Language.language == "FR")
                 {
-                    Console.Write("1. Ajouter un travail de sauvegarde \t");
-                    Console.Write("2. Executer un travail de sauvegarde\n");
+                    Console.Write("1. Ajoutez un travail de sauvegarde \t");
+                    Console.Write("2. Executez un travail de sauvegarde\n");
                     Console.WriteLine("3. Quittez l'application\n");
 
                     string input = Console.ReadLine();
