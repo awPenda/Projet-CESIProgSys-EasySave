@@ -5,7 +5,6 @@ Projet CESI A3 Programmation system november 2021
 
 EASY SAVE is a logiciel that help user saving their data.
 
-cc c racim
 ----
 
 
