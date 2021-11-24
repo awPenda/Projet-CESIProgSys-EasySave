@@ -1,96 +1,131 @@
+# EASY SAVE
 
-# Présentation Prosoft
+repo : CESIProgSys-EasySave
+Projet CESI A3 Programmation system november 2021
 
-Notre équipe vient d'intégrer l'éditeur de logiciels ProSoft. Sous la responsabilité du DSI, nous auront la responsabilité de gérer le projet “EasySave” qui consiste à développer un logiciel de sauvegarde.
-Comme tout logiciel de la Suite ProSoft, le logiciel s'intégrera à la politique tarifaire.
-    • Prix unitaire : 200 €HT
-    • Contrat de maintenance annuel 5/7 8-17h (mises à jour incluses): 12% prix d'achat (Contrat annuel à tacite reconduction avec revalorisation basée sur l'indice SYNTEC)
-Lors de ce projet, notre équipe devra assurer le développement, la gestion des versions majeures et mineures, mais aussi les documentations
-    • pour les utilisateurs : manuel d'utilisation (sur une page )
-    • pour le support client : Informations nécessaires pour le support technique (Emplacement par défaut du logiciel, Configuration minimale,Emplacement des fichiers de configuration, ....)
-Pour garantir une reprise de notre travail par d'autres équipes, la direction nous impose de travailler dans le respect des contraintes suivantes :
-    • Outils et méthodes
-        ◦ Visual Studio 2019 16.3 ou supérieure
-        ◦ GIT Azur DevOps.
-        ◦ Editeur UML : Nous préconisations l'utilisation de ArgoUML
-          « Tous vos documents et l'ensemble des codes doivent être gérés dans ces outils. »
-          « Votre responsable (tuteur ou pilote) doit être invité sur votre GIT pour pouvoir suivre vos développements »
-    • Langage, FrameWork
-        ◦ Langage C#
-        ◦ Bibliothèque Net.Core 3.X
-    • Lisibilité et maintenabilité du code :
-        ◦ L'ensemble des documents, lignes de codes et commentaires doivent être exploitables par les filiales anglophones.
-        ◦ Le nombre de lignes de code dans une fonction doit être raisonnable
-        ◦ La redondance des lignes de code et à proscrire (une vigilance particulière sera faite sur les copier-coller)
-        ◦ Respect des conventions de nommage
-    • Autres :
-        ◦ La documentation utilisateur doit tenir en une seule page
-        ◦ Release note obligatoire
-Nous devons conduire ce projet de manière à réduire les coûts de développement des futures versions et surtout d'être capable de réagir rapidement à la remontée éventuelle d'un dysfonctionnement.
-    • Gestion des versions
-    • Limiter au maximum les lignes de code dupliquées
-Le logiciel devant être distribué chez les clients, il est impératif de soigner les IHM.
- 
-## Livrable 0 : Environnement de travail
+EASY SAVE is a logiciel that help user saving their data.
 
-Notre équipe doit installer un environnement de travail respectant les contraintes imposées par ProSoft.
-Le bon usage de l'environnement de travail et des contraintes imposées par la direction seront évalués tout au long du projet.
-Une vigilance particulière sera portée sur :
-    • la gestion de GIT (versioning)
-    • les diagrammes UML à rendre 24 heures avant chaque livrable (Jalon)
-    • La qualité du code (absence de redondance dans les lignes de code)
+Liv 1 :
+https://viacesifr-my.sharepoint.com/:w:/g/personal/amelie_willems_viacesi_fr/Eb3LgEMi7qFIpZjNY4xcWhcBRiODLB3UVwRHmdjZlXBjuQ?e=W9nEs2
 
-## Livrable 1 : EasySave version 1.0
+----
 
-Le cahier des charges de la première version du logiciel est le suivant :
-    • Le logiciel est une application Console utilisant .Net Core.
-    • Le logiciel doit permettre de créer jusqu'à 5 travaux de sauvegarde
-    • Un travail de sauvegarde est défini par
-        ◦ Une appellation
-        ◦ Un répertoire source
-        ◦ Un répertoire cible
-        ◦ Un type (complet, différentiel)
-    • Le logiciel doit être utilisable à minima par des utilisateurs anglophones et Francophones
-    • L'utilisateur peut demander l'exécution d'un des travaux de sauvegarde ou l'exécution séquentielle de l'ensemble des travaux.
-    • Les répertoires (sources et cibles) pourront être sur :
-        ◦ Des disques locaux
-        ◦ Des disques Externes
-        ◦ Des Lecteurs réseaux
-    • Tous les éléments du répertoire source sont concernés par la sauvegarde
-    • Fichier Log journalier :
-      Le logiciel doit écrire en temps réel dans un fichier log journalier l'historique des actions des travaux de sauvegarde. Les informations minimales attendues sont :
-        ◦ Horodatage
-        ◦ Appellation du travail de sauvegarde
-        ◦ Adresse complète du fichier Source (format UNC)
-        ◦ Adresse complète du fichier de destination (format UNC)
-        ◦ Taille du fichier
-        ◦ Temps de transfert du fichier en ms (négatif si erreur)
-        ◦ Exemple de contenu: Sample_log.pdf [pdf]
-    • Le logiciel doit enregistrer en temps réel, dans un fichier unique, l'état d'avancement des travaux de sauvegarde. Les informations à enregistrer pour chaque travail de sauvegarde sont :
-        ◦ Appellation du travail de sauvegarde
-        ◦ Horodatage
-        ◦ Etat du travail de Sauvegarde (ex : Actif, Non Actif...)
-      Si le travail est actif :
-        ◦ Le nombre total de fichiers éligibles
-        ◦ La taille des fichiers à transférer
-        ◦ La progression
-            ▪ Nombre de fichiers restants
-            ▪ Taille des fichiers restants
-            ▪ Adresse complète du fichier Source en cours de sauvegarde
-            ▪ Adresse complète du fichier de destination
-        ◦ exemple de contenu : Sample_state.pdf [pdf]
-    • Les emplacements des deux fichiers (log journalier et état) devront être étudiés pour fonctionner sur les serveurs des clients. De ce fait, les emplacements du type « c:\temp\ » sont à proscrire.
-    • Les fichiers (log journalier et état) et les éventuels fichiers de configuration seront au format JSON. Pour permettre une lecture rapide via Notepad, il est nécessaire de mettre des retours à la ligne entre les éléments JSON. Une pagination serait un plus.
-Remarque importante : si le logiciel donne satisfaction, la direction vous demandera de développer une version 2.0 utilisant une interface graphique WPF (basée sur l'architecture MVVM)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+# User Guide
+
+## V1-console
+
+User is guided through all the processes. You just have to follow the commands printed in the console.
+
+### Create a Savework
+When you will create a SaveWork, the program are going to ask you : 
+  a name, to identify your SaveWork
+  a source directory, where the program will copy the files 
+  a target directory, where the program will paste the files
+  a type of save, complete or differential
+
+
+### Single run
+Single run starts a single save process.
+When you will start a single run, you will have to specified the number of the SaveWork you want to proceed.
+
+### Sequential run
+Sequential run starts all the backup processes one after the other.
+For a sequential run, the program will run each SaveWork one after the other, you dont have to worry about it the program  will inform you if there's any issue.
+
+
+## V2 - GUI
+
+### Single run
+Single run starts a single backup process.
+
+### Sequential run
+Sequential run starts all the backup processes one after the other.
+
+
+## about logs and state files
+
+The LogFile and the stateFile will be updated and save in real time, and each time a save function is called. 
+
+log file structure :
+``` 
+{
+  "name":"",
+  "sourceFile":"",
+  "targetFile":"",
+  "fileSize":"",
+  "fileTransferTimee":"",
+  "time":""
+  
+}
+```
+state file structure :
+```
+{
+  "name":"",
+  "state":"",
+  "sourceFile":"",
+  "targetFile":"",
+  "totalFileNb":"",
+  "totalFileSize":"",
+  "progress":"", 
+  "nbFilesLeft":"",
+  "sizeFileLeft":"",
+  "time":""
+}
+```
+
+
+
+
+
+
+----
+
+
+# Guide utilisateur 
+
+## Execution unique
+L'éxecution unique lance un unique processus de sauvegarde. 
+
+### V1-console
+
+### V2 - GUI
+
+## Execution séquentielle 
+L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite les uns des autres.
+
+### V1-console
+
+### V2 - GUI
+
+## À propos des fichiers logs et d'état
+L'historique des executions est sauvegardé dans un fichier log journalier ainsi que l'état des sauvegardes. 
+
+structure fichier log :
+```
+{
+  "name":"",
+  "sourceFile":"",
+  "targetFile":"",
+  "fileSize":"",
+  "fileTransferTimee":"",
+  "time":""
+  
+}
+```
+structure fichier état :
+```
+{
+  "name":"",
+  "state":"",
+  "sourceFile":"",
+  "targetFile":"",
+  "totalFileNb":"",
+  "totalFileSize":"",
+  "progress":"", 
+  "nbFilesLeft":"",
+  "sizeFileLeft":"",
+  "time":""
+}
+```
