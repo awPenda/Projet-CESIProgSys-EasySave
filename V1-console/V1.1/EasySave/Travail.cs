@@ -102,7 +102,56 @@ namespace EasySave
             }
 
         }
+public void UpdateLogFile(string inputUtilisateur)//Function to allow modification of the log file
+        {
+            var jsonData = File.ReadAllText(filePath);
+            var loglist = JsonConvert.DeserializeObject<List<DataLogs>>(jsonData) ?? new List<DataLogs>();
+            string sourceDir = loglist.ElementAt(Convert.ToInt32(inputUtilisateur) ).sourceFilePath;
+            string backupDir = loglist.ElementAt(Convert.ToInt32(inputUtilisateur) ).targetFilePath;
 
+            //Formatting the stopwatch for better visibility in the file
+            //string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}");
+            DataLogs datalogs = new DataLogs //Apply the retrieved values ​​to their classes
+            {
+                name = name,
+                sourceFilePath = repS,
+                targetFilePath = repC,
+                type = type,
+                state = "ACTIVE",
+                time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                TotalSize = TotalSize,
+                //TransactionTime = elapsedTime
+            };
+            loglist.Add(new DataLogs()
+            {
+                name = name,
+                sourceFilePath = repS,
+                targetFilePath = repC,
+                type = type,
+                state = "end",
+
+                TotalSize = TotalSize,
+                TransactionTime = this.BackupDate,
+                time = DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss"),
+
+            });
+            string strResultJson = JsonConvert.SerializeObject(loglist);
+            File.WriteAllText(filePath, strResultJson);
+            
+
+            string path = System.Environment.CurrentDirectory; //Allows you to retrieve the path of the program environment
+            var directory = System.IO.Path.GetDirectoryName(path); // This file saves in the project: \EasySaveApp\bin
+
+            string serializeObj = JsonConvert.SerializeObject(datalogs, Formatting.Indented) + Environment.NewLine; //Serialization for writing to json file
+            File.AppendAllText(directory + @"DailyLogs_" + DateTime.Now.ToString("dd-MM-yyyy") + ".json", serializeObj); //Function to write to log file
+
+            
+            Stopwatch stopwatch = new Stopwatch();
+      
+            File.WriteAllText(filePath, strResultJson);
+
+            Console.WriteLine("Travail ajouté avec succès !\n");
+        }
         public void ExecuteWork(int inputUtilisateur)
         {
             var jsonData = File.ReadAllText(filePath);
