@@ -8,18 +8,18 @@ using System.Linq;
 
 namespace EasySave
 {
-    class Travail : Etat
+    class Travail : Etat 
     {
         public Travail()
         { }
         public Travail(string theName, string therepS, string therepC, string theType)
         {
-            name = theName;
+            Name = theName;
             repS = therepS;
             repC = therepC;
             type = theType;
         }
-        private string name { get; set; }
+        private string Name { get; set; }
         private string repS { get; set; }
         private string repC { get; set; }
         private string type { get; set; }
@@ -33,7 +33,7 @@ namespace EasySave
             {
                 stateList.Add(new Etat()
                 {
-                    Name = name,
+                    Name = Name,
                     SourceFilePath = repS,
                     TargetFilePath = repC,
                     Type = type,
@@ -107,6 +107,32 @@ namespace EasySave
 
         }
 
+       /* public void UpdateLogFile(string name, string sourceFilePath, string targetFilePath)//Function to allow modification of the log file
+        {
+            
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", TimeTransfert.Hours, TimeTransfert.Minutes, TimeTransfert.Seconds, TimeTransfert.Milliseconds / 10); //Formatting the stopwatch for better visibility in the file
+
+            DataLogs datalogs = new DataLogs //Apply the retrieved values ​​to their classes
+            {
+                name = name,
+                sourceFilePath = repS,
+                targetFilePath = repC,
+                type = type,
+                state = "ACTIVE",
+                BackupDate = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                TotalSize = TotalSize,
+                TransactionTime = elapsedTime
+            };
+
+            string path = System.Environment.CurrentDirectory; //Allows you to retrieve the path of the program environment
+            var directory = System.IO.Path.GetDirectoryName(path); // This file saves in the project: \EasySaveApp\bin
+
+            string serializeObj = JsonConvert.SerializeObject(datalogs, Formatting.Indented) + Environment.NewLine; //Serialization for writing to json file
+            File.AppendAllText(directory + @"DailyLogs_" + DateTime.Now.ToString("dd-MM-yyyy") + ".json", serializeObj); //Function to write to log file
+
+            stopwatch.Reset(); // Reset of stopwatch
+        }
+       */
         public void ExecuteWork(string inputUtilisateur)
         {
             var jsonData = File.ReadAllText(filePath);
@@ -125,6 +151,8 @@ namespace EasySave
                 {
                     SaveFilesFunction(sourceDir, backupDir);
                     Console.WriteLine("Files copied !");
+
+                    
                 }
 
             }

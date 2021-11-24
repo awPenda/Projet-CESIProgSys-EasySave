@@ -124,7 +124,13 @@ namespace EasySave
                     }
                     else if (input == "2")
                     {
-                        Console.WriteLine("En Cours de développement\n");
+                        for(int i =1; i<6;i++)
+                        {
+                            string work= Convert.ToString(i);
+                            travail.ExecuteWork(work);
+                           
+                        }
+                        Console.WriteLine("tous les travaux sont éxecutés");
                     }
                     else
                     {
