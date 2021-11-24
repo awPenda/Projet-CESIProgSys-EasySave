@@ -50,6 +50,7 @@ namespace EasySave
                             Console.Write("Le répertoire source ou de destination précisé est erroné");
                         }
                     }
+
                     else if (input == "2")
                     {
                         try
@@ -100,10 +101,13 @@ namespace EasySave
                             case "1":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 1");
                                 travail.ExecuteWork(input);
+                                
                                 break;
                             case "2":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 2");
                                 travail.ExecuteWork(input);
+                                travail.UpdateLogFile(input);
+
                                 break;
                             case "3":
                                 Console.WriteLine("Vous avez choisis le travail de sauvegarde numéro 3");
@@ -124,13 +128,15 @@ namespace EasySave
                     }
                     else if (input == "2")
                     {
-                        for(int i =1; i<6;i++)
+                      /*  for(int i =1; i<6;i++)
                         {
                             string work= Convert.ToString(i);
                             travail.ExecuteWork(work);
-                           
-                        }
-                        Console.WriteLine("tous les travaux sont éxecutés");
+
+                            Console.WriteLine("le travail "+work+"  est  éxecuté");
+                        }*/
+                        Console.WriteLine("tous les travaux sont  éxecutés");
+
                     }
                     else
                     {
