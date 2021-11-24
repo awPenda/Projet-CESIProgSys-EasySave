@@ -1,0 +1,16 @@
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.exe
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.deps.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.runtimeconfig.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.runtimeconfig.dev.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\EasySave.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\ConsoleTables.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.csprojAssemblyReference.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.AssemblyInfoInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.AssemblyInfo.cs
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.csproj.CoreCompileInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.csproj.CopyComplete
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\obj\Debug\netcoreapp3.1\EasySave.genruntimeconfig.cache

@@ -6,7 +6,7 @@ namespace EasySave
 {
     class Etat
     {
-        protected string filePath = @"C:\Users\sofia\source\repos\EasySave\EasySave\state.json";
+        protected string filePath = @"C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\V1.1\EasySave\state.json";
 
         public string Name { get; set; }
         public string SourceFilePath { get; set; }

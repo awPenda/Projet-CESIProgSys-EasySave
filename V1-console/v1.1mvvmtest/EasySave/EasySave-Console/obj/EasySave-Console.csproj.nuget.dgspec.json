@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\V1.1\\EasySave\\EasySave.csproj": {}
+    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\v1.1mvvmtest\\EasySave\\EasySave-Console\\EasySave-Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\V1.1\\EasySave\\EasySave.csproj": {
+    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\v1.1mvvmtest\\EasySave\\EasySave-Console\\EasySave-Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\V1.1\\EasySave\\EasySave.csproj",
-        "projectName": "EasySave",
-        "projectPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\V1.1\\EasySave\\EasySave.csproj",
+        "projectUniqueName": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\v1.1mvvmtest\\EasySave\\EasySave-Console\\EasySave-Console.csproj",
+        "projectName": "EasySave-Console",
+        "projectPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\v1.1mvvmtest\\EasySave\\EasySave-Console\\EasySave-Console.csproj",
         "packagesPath": "C:\\Users\\ameli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\V1.1\\EasySave\\obj\\",
+        "outputPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V1-console\\v1.1mvvmtest\\EasySave\\EasySave-Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,16 +43,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "ConsoleTables": {
-              "target": "Package",
-              "version": "[2.4.2, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
