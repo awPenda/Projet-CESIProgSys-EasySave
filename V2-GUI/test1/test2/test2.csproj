@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="disquette.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="disquette.png" />
+  </ItemGroup>
+
 </Project>
