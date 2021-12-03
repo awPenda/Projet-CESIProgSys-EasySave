@@ -1,0 +1,14 @@
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\bin\Debug\test.exe
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\bin\Debug\test.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.csprojAssemblyReference.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\MainWindow.g.cs
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\App.g.cs
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test_MarkupCompile.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test_MarkupCompile.lref
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\MainWindow.baml
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.g.resources
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.Properties.Resources.resources
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.exe
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V2-GUI\test1\test\obj\Debug\test.pdb
