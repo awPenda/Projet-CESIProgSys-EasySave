@@ -14,4 +14,10 @@
     <Resource Include="disquette.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Files\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
 </Project>
