@@ -1,0 +1,16 @@
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.exe
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.deps.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.runtimeconfig.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.runtimeconfig.dev.json
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Projet.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\ConsoleTables.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.csprojAssemblyReference.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.AssemblyInfoInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.AssemblyInfo.cs
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.csproj.CoreCompileInputs.cache
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.csproj.CopyComplete
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.dll
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.pdb
+C:\Users\ameli\Documents\GitHub\CESIProgSys-EasySave\V1-console\ApplicationConsoleFinal\obj\Debug\netcoreapp3.0\Projet.genruntimeconfig.cache
