@@ -11,21 +11,23 @@
     <Grid Background="#000B14">
 
         <TabControl HorizontalAlignment="Center" Height="409" VerticalAlignment="Center" Width="687" Background="{x:Null}">
-            <TabItem Header="AddSaveWorkTab" Margin="0,0,0,0" Width="220" Tag="AddSaveWorkTab" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+            
+            <!--tab1, Add Save Work-->
+            <TabItem Name="tab1SaveWork" Header="Add Save Work" Margin="0,0,0,0" Width="220" Tag="AddSaveWorkTab" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
                 <Grid Background="#001427">
 
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <ComboBox HorizontalAlignment="Left" Margin="171,230,0,0" VerticalAlignment="Top" Width="120">
-                        <ComboBoxItem Content="differential" Height="20" Width="100"/>
-                        <ComboBoxItem Content="full" Height="20" Width="100"/>
+                    <ComboBox Name="tab1SelectType" HorizontalAlignment="Left" Margin="171,230,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+                        <ComboBoxItem Name="tab1SelectTypeFull" Content="Full" Height="20" Width="100"/>
+                        <ComboBoxItem Name="tab1SelectTypeDifferential" Content="Differential" Height="20" Width="100"/>
                     </ComboBox>
-                    <TextBox HorizontalAlignment="Left" Margin="171,136,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
-                    <TextBox HorizontalAlignment="Left" Margin="171,168,0,0" Text="SourcePath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Margin="171,200,0,0" Text="TargetPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <CheckBox Content="Crypted" HorizontalAlignment="Left" Margin="196,262,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <Button Content="Add" HorizontalAlignment="Left" Margin="72,320,0,0" VerticalAlignment="Top" Width="174" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                    <TextBox Name="tab1TextBoxName" HorizontalAlignment="Left" Margin="171,136,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
+                    <TextBox Name="tab1TextBoxSourcePath" HorizontalAlignment="Left" Margin="171,168,0,0" Text="SourcePath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tab1TextBoxTargetPath" HorizontalAlignment="Left" Margin="171,200,0,0" Text="TargetPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <CheckBox Name="tab1CheckCrypted" Content="Crypted" HorizontalAlignment="Left" Margin="196,262,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Button Name="tab1ButtonAdd" Content="Add" HorizontalAlignment="Left" Margin="72,320,0,0" VerticalAlignment="Top" Width="174" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="20"/>
@@ -35,22 +37,26 @@
 
 
 
-                    <Label Content="Save work name :" HorizontalAlignment="Left" Margin="24,132,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <Label Content="Source path :" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <Label Content="Target path :" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <Label Content="Save work type :" HorizontalAlignment="Left" Margin="24,228,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <Label Content="Files encrypted :" HorizontalAlignment="Left" Margin="24,260,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <DataGrid Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab1Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
+                    <Label Name="tab1LabelName" Content="Save work name :" HorizontalAlignment="Left" Margin="24,132,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Name="tab1LabelSourcePath" Content="Source path :" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Name="tab1LabelTargetPath" Content="Target path :" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Name="tab1LabelType" Content="Save work type :" HorizontalAlignment="Left" Margin="24,228,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Name="tab1LabelCrypted" Content="Files encrypted :" HorizontalAlignment="Left" Margin="24,260,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <DataGrid Name="tab1DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="tab1DataGrid" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
 
-                    <Image HorizontalAlignment="Left" Height="72" Margin="24,14,0,0" VerticalAlignment="Top" Width="64" Source="/disquette.png"/>
-                    <Label Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
-                    <TextBlock HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
+                    <Image Name="tab1ImageLogo" HorizontalAlignment="Left" Height="72" Margin="24,14,0,0" VerticalAlignment="Top" Width="64" Source="/disquette.png"/>
+                    <Label Name="tab1LabelNameApp" Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
+                    <TextBlock Name="tab1TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
 
                 </Grid>
             </TabItem>
-            <TabItem Header="RunSaveWorkTab" Tag="RunSaveWorkTab" Margin="0,0,0,0" Width="220" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+
+
+
+            <!--tab2, Run Save Work-->
+            <TabItem Name="tab2RunWork" Header="Run Save Work" Tag="RunSaveWorkTab" Margin="0,0,0,0" Width="220" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
                 <Grid Background="#001427">
-                    <Button Content="StartSequentialRun" HorizontalAlignment="Left" Margin="29,136,0,0" VerticalAlignment="Top" Width="279" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32">
+                    <Button Name="tab2ButtonStartSequentialRun" Content="StartSequentialRun" HorizontalAlignment="Left" Margin="29,136,0,0" VerticalAlignment="Top" Width="279" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
@@ -58,44 +64,51 @@
                         </Button.Resources>
                     </Button>
 
-                    <Button Content="StartSingleRun" HorizontalAlignment="Left" Margin="183,185,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32">
+                    <Button Name="tab2ButtonStartSingleRun" Content="StartSingleRun" HorizontalAlignment="Left" Margin="183,185,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <ProgressBar HorizontalAlignment="Left" Height="25" Margin="34,277,0,0" VerticalAlignment="Top" Width="269"/>
+                    <ProgressBar Name="tab2ProgessBar" HorizontalAlignment="Left" Height="25" Margin="34,277,0,0" VerticalAlignment="Top" Width="269"/>
                     <Label Content="Progress" HorizontalAlignment="Left" Margin="34,245,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFC2E1FF"/>
 
-                    <Button Content="Pause" HorizontalAlignment="Left" Margin="34,320,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#EE8F2A" Background="#EE8F2A"  Foreground="White" Height="32">
+                    <Button Name="tab2ButtonPause" Content="Pause" HorizontalAlignment="Left" Margin="34,320,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#EE8F2A" Background="#EE8F2A"  Foreground="White" Height="32">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Content="Stop" HorizontalAlignment="Left" Margin="183,320,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#860F07" Background="#860F07"  Foreground="White" Height="32">
+                    <Button Name="tab2ButtonStop" Content="Stop" HorizontalAlignment="Left" Margin="183,320,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#860F07" Background="#860F07"  Foreground="White" Height="32">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <TextBox HorizontalAlignment="Left" Margin="34,192,0,0" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-                    <DataGrid Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
-                    <Image HorizontalAlignment="Left" Height="72" Margin="24,14,0,0" VerticalAlignment="Top" Width="64" Source="/disquette.png"/>
-                    <Label Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
-                    <TextBlock HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
+                    <TextBox Name="tab2TextBoxNumber" HorizontalAlignment="Left" Margin="34,192,0,0" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+                    <DataGrid Name="tab2DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
+                    <Image Name="tab2ImageLogo" HorizontalAlignment="Left" Height="72" Margin="24,14,0,0" VerticalAlignment="Top" Width="64" Source="/disquette.png"/>
+                    <Label Name="tab2LabelNameApp" Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
+                    <TextBlock Name="tab2TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
                 </Grid>
             </TabItem>
-            <TabItem Header="SettingsTab" Tag="SettingsTab" Margin="0,0,0,0" Width="200" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+
+
+
+
+
+
+            <!--tab3, Settings-->
+            <TabItem Name="tab3Settings" Header="Settings" Tag="SettingsTab" Margin="0,0,0,0" Width="200" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
                 <Grid Background="#001427">
-                    <ComboBox HorizontalAlignment="Left" Margin="500,60,0,0" VerticalAlignment="Top" Width="120" StaysOpenOnEdit="True" AutomationProperties.Name="SelectLanguage">
-                        <ComboBoxItem Content="English" Height="20" Width="100"/>
-                        <ComboBoxItem Content="Français" Height="20" Width="100"/>
+                    <ComboBox Name="tab2SelectLang" HorizontalAlignment="Left" Margin="500,60,0,0" VerticalAlignment="Top" Width="120" StaysOpenOnEdit="True" AutomationProperties.Name="SelectLanguage" SelectedIndex="0">
+                        <ComboBoxItem Name="tab2SelectLangEN" Content="English" Height="20" Width="100"/>
+                        <ComboBoxItem Name="tab2SelectLangFR" Content="Français" Height="20" Width="100"/>
                     </ComboBox>
-                    <Button Content="OpenLogs" HorizontalAlignment="Left" Margin="326,298,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                    <Button Name="tab3" Content="OpenLogs" HorizontalAlignment="Left" Margin="326,298,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="20"/>
