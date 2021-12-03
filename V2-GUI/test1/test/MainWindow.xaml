@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="409" Width="687">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="286.997" Margin="174.552,73.134,0,0" VerticalAlignment="Top" Width="437.802">
+        <TabControl HorizontalAlignment="Left" Height="378" VerticalAlignment="Top" Width="679">
             <TabItem Header="Add a Save Work">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
