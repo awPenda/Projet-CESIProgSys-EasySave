@@ -25,6 +25,52 @@ namespace test2
             InitializeComponent();
         }
 
+
+        //tab1 add save work
+        private void tab1ButtonAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        //tab2 run save work
+        private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tab2ButtonPause_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tab2ButtonStop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //tab3 Settings 
+        private void tab3ButtonUserGuide_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tab3ButtonOpenConfig_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tab3ButtonOpenLogs_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //button close
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             Close();
