@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace test2
 {
@@ -57,16 +58,18 @@ namespace test2
         //tab3 Settings 
         private void tab3ButtonUserGuide_Click(object sender, RoutedEventArgs e)
         {
-
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\UserGuide.txt");
         }
 
         private void tab3ButtonOpenConfig_Click(object sender, RoutedEventArgs e)
         {
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\work.json");
 
         }
 
         private void tab3ButtonOpenLogs_Click(object sender, RoutedEventArgs e)
         {
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
 
         }
 
