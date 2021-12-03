@@ -5,50 +5,128 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="411" Width="575">
-    <Grid>
-        <TabControl>
-            <TabItem Header="AddSaveWorkTab" Margin="0,0,0,0" Tag="AddSaveWorkTab" Background="White" BorderBrush="#FFEE8F2A" Foreground="#FFEE8F2A">
-                <Grid Background="#FFEE8F2A">
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="409" Width="687" FontFamily="Lato" FontSize="14" Background="#FF000B14">
+    <Grid Background="#000B14">
+        <TabControl HorizontalAlignment="Center" Height="409" VerticalAlignment="Center" Width="687" Background="{x:Null}">
+            <TabItem Header="AddSaveWorkTab" Margin="0,0,0,0" Width="227" Tag="AddSaveWorkTab" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+                <Grid Background="#001427">
+
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <DataGrid Margin="164,10,10,10" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab1Add" />
-                    <ComboBox HorizontalAlignment="Left" Margin="25,149,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+                    <DataGrid Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab1Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" BorderBrush="{x:Null}" Background="White" />
+                    <ComboBox HorizontalAlignment="Left" Margin="136,121,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
                         <ComboBoxItem Content="differential" Height="20" Width="100"/>
                         <ComboBoxItem Content="full" Height="20" Width="100"/>
                     </ComboBox>
-                    <TextBox HorizontalAlignment="Left" Margin="25,80,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Margin="25,103,0,0" Text="SourcePath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Margin="25,126,0,0" Text="TargetPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-                    <CheckBox Content="Crypted" HorizontalAlignment="Left" Margin="37,185,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Add" HorizontalAlignment="Left" Margin="25,211,0,0" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Margin="136,27,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
+                    <TextBox HorizontalAlignment="Left" Margin="136,59,0,0" Text="SourcePath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox HorizontalAlignment="Left" Margin="136,91,0,0" Text="TargetPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <CheckBox Content="Crypted" HorizontalAlignment="Left" Margin="161,158,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Button Content="Add" HorizontalAlignment="Left" Margin="82,282,0,0" VerticalAlignment="Top" Width="174" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                        <!--
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#FF0069CC"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF006900"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="12"
+                                        Background="{TemplateBinding Background}" Margin="0,0,16,-2">
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        -->
+                    </Button>
+
+                    <Label Content="Save work name :" HorizontalAlignment="Left" Margin="13,23,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Content="Source path :" HorizontalAlignment="Left" Margin="13,55,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Content="Target path :" HorizontalAlignment="Left" Margin="13,87,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Content="Save work type :" HorizontalAlignment="Left" Margin="13,119,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
+                    <Label Content="Files encrypted :" HorizontalAlignment="Left" Margin="13,151,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
 
                 </Grid>
             </TabItem>
-            <TabItem Header="RunSaveWorkTab" Tag="RunSaveWorkTab" Margin="0,0,0,0" Background="White" Foreground="#FFB84A00" BorderBrush="#FFB84A00">
-                <Grid Background="#FFB84A00">
-                    <DataGrid Margin="164,10,10,10" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" />
-                    <Button Content="SequentialRun" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="SingleRun" HorizontalAlignment="Left" Margin="24,72,0,0" VerticalAlignment="Top" Width="120"/>
-                    <ProgressBar HorizontalAlignment="Left" Height="10" Margin="24,154,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Label Content="Progress" HorizontalAlignment="Left" Margin="24,123,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="Start" HorizontalAlignment="Left" Margin="24,185,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="Pause" HorizontalAlignment="Left" Margin="24,210,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="Stop" HorizontalAlignment="Left" Margin="24,235,0,0" VerticalAlignment="Top" Width="120"/>
-                    <TextBox HorizontalAlignment="Left" Margin="24,49,0,0" Text="SaveWorkNumber" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TabItem Header="RunSaveWorkTab" Tag="RunSaveWorkTab" Margin="0,0,0,0" Width="227" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+                <Grid Background="#001427">
+                    <Button Content="StartSequentialRun" HorizontalAlignment="Left" Margin="24,18,0,0" VerticalAlignment="Top" Width="279" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                    <Button Content="StartSingleRun" HorizontalAlignment="Left" Margin="183,96,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <ProgressBar HorizontalAlignment="Left" Height="25" Margin="34,249,0,0" VerticalAlignment="Top" Width="269"/>
+                    <Label Content="Progress" HorizontalAlignment="Left" Margin="34,217,0,0" VerticalAlignment="Top" Width="120" Foreground="White"/>
+
+                    <Button Content="Pause" HorizontalAlignment="Left" Margin="34,306,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="Stop" HorizontalAlignment="Left" Margin="183,306,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <TextBox HorizontalAlignment="Left" Margin="34,108,0,0" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+                    <DataGrid Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab1Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
                 </Grid>
             </TabItem>
-            <TabItem Header="SettingsTab" Tag="SettingsTab" Margin="0,0,0,0" Background="White" BorderBrush="#FF860F07" Foreground="#FF860F07">
-                <Grid Background="#FF860F07">
-                    <DataGrid Margin="164,10,10,10" BorderThickness="1,0,1,1" AutomationProperties.Name="GridViewTab2Run" />
+            <TabItem Header="SettingsTab" Tag="SettingsTab" Margin="0,0,0,0" Width="228" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+                <Grid Background="#001427">
                     <ComboBox HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Width="120" StaysOpenOnEdit="True" AutomationProperties.Name="SelectLanguage">
                         <ComboBoxItem Content="English" Height="50" Width="100"/>
                         <ComboBoxItem Content="Français" Height="50" Width="100"/>
                     </ComboBox>
-                    <Button Content="OpenLogs" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="OpenConfig" HorizontalAlignment="Left" Margin="22,129,0,0" VerticalAlignment="Top" Width="120"/>
-                    <Button Content="UseGuide" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="OpenLogs" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="OpenConfig" HorizontalAlignment="Left" Margin="22,129,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Content="UseGuide" HorizontalAlignment="Left" Margin="22,70,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
                 </Grid>
             </TabItem>
         </TabControl>
