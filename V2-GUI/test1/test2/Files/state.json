@@ -53,5 +53,38 @@
     "TotalFilesSize": "0",
     "NbFilesLeftToDo": "0",
     "Progression": "100%"
+  },
+  {
+    "Name": "fsdfss",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "04/12/2021 19:18:27",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "86",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "dqqdq",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "04/12/2021 19:31:00",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "86",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "mpmpmp",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "04/12/2021 19:49:19",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "86",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
   }
 ]

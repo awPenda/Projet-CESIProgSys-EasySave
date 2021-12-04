@@ -12,27 +12,30 @@
         <!--3 tabs, respectivly for the setings, adding, or running a save work-->
         <TabControl HorizontalAlignment="Center" Height="409" VerticalAlignment="Center" Width="687" Background="{x:Null}">
             <!--tab1, Add Save Work-->
-            <TabItem Name="tab1SaveWork" Header="Add Save Work" Margin="0,0,0,0" Width="220" Tag="AddSaveWorkTab" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
+            <TabItem Name="tab1SaveWork" Header="Add Save Work" Margin="0,0,0,0" Width="220" Tag="AddSaveWorkTab" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF" Loaded="tab1SaveWork_Loaded">
                 <Grid Background="#001427">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="289*"/>
+                        <ColumnDefinition Width="45*"/>
+                        <ColumnDefinition Width="28*"/>
+                        <ColumnDefinition Width="320*"/>
                     </Grid.ColumnDefinitions>
                     <!-- Branding -->
                     <Image Name="tab1ImageLogo" HorizontalAlignment="Left" Height="72" Margin="24,14,0,0" VerticalAlignment="Top" Width="64" Source="/disquette.png"/>
                     <Label Name="tab1LabelNameApp" Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
-                    <TextBlock Name="tab1TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
+                    <TextBlock Name="tab1TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light" Grid.ColumnSpan="2"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
                     <!-- Save work name -->
                     <Label Name="tab1LabelName" Content="Save work name :" HorizontalAlignment="Left" Margin="24,132,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxName" HorizontalAlignment="Left" Margin="171,136,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
+                    <TextBox Name="tab1TextBoxName" HorizontalAlignment="Left" Margin="171,136,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}" Grid.ColumnSpan="2"/>
                     <!-- source path-->
                     <Label Name="tab1LabelSourcePath" Content="Source path :" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxSourcePath" HorizontalAlignment="Left" Margin="171,168,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tab1TextBoxSourcePath" HorizontalAlignment="Left" Margin="171,168,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Grid.ColumnSpan="2"/>
                     <!-- target path-->
                     <Label Name="tab1LabelTargetPath" Content="Target path :" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxTargetPath" HorizontalAlignment="Left" Margin="171,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tab1TextBoxTargetPath" HorizontalAlignment="Left" Margin="171,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False" Grid.ColumnSpan="2"/>
                     <!-- save work type -->
                     <Label Name="tab1LabelType" Content="Save work type :" HorizontalAlignment="Left" Margin="24,228,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <ComboBox Name="tab1SelectType" HorizontalAlignment="Left" Margin="171,230,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+                    <ComboBox Name="tab1SelectType" HorizontalAlignment="Left" Margin="171,230,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" Grid.ColumnSpan="2">
                         <ComboBoxItem Name="tab1SelectTypeFull" Content="Full" Height="20" Width="100"/>
                         <ComboBoxItem Name="tab1SelectTypeDifferential" Content="Differential" Height="20" Width="100"/>
                     </ComboBox>
@@ -48,7 +51,9 @@
                         </Button.Resources>
                     </Button>
                     <!-- DataGrid to see data we can get from JSON -->
-                    <DataGrid Name="tab1DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="tab1DataGrid" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
+                    <DataGrid Name="tab1DataGrid" Margin="6,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="tab1DataGrid" Height="343" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" LoadingRow="tab1DataGrid_LoadingRow" Grid.Column="2" IsEnabled="False" Grid.ColumnSpan="2"   />
+                    <Button Click="SourcePath_Clicked" Content="..." HorizontalAlignment="Right" Height="17" Margin="0,170,7,0" VerticalAlignment="Top" Width="28" Grid.Column="1"/>
+                    <Button Click="TargetPATH_Clicked" Content="..." HorizontalAlignment="Left" Height="17" Margin="10,200,0,0" VerticalAlignment="Top" Width="28" Grid.Column="1"/>
                 </Grid>
             </TabItem>
 
@@ -95,7 +100,7 @@
                         </Button.Resources>
                     </Button>
                     <!-- DataGrid to see data we can get from JSON -->
-                    <DataGrid Name="tab2DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
+                    <DataGrid Name="tab2DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" Loaded="tab2DataGrid_Loaded" LoadingRow="tab2DataGrid_LoadingRow" />
                 </Grid>
             </TabItem>
 

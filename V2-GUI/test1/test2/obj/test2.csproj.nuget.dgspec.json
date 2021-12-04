@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj": {}
+    "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj": {
+    "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj",
+        "projectUniqueName": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
         "projectName": "test2",
-        "projectPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj",
-        "packagesPath": "C:\\Users\\ameli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\obj\\",
+        "projectPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
+        "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ameli\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -43,6 +39,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Ookii.Dialogs.Wpf": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "name": "fsdfss",
+    "repS": "C:\\Source",
+    "repC": "C:\\Destination",
+    "type": "Full"
+  },
+  {
+    "name": "dqqdq",
+    "repS": "C:\\Source",
+    "repC": "C:\\Destination",
+    "type": "Full"
+  },
+  {
+    "name": "mpmpmp",
+    "repS": "C:\\Source",
+    "repC": "C:\\Destination",
+    "type": "Full"
+  }
+]

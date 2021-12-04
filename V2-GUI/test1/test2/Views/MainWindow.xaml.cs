@@ -23,13 +23,52 @@ namespace test2
     {
         public MainWindow()
         {
-            InitializeComponent();
+          InitializeComponent();
         }
 
 
         //tab1 add save work
         private void tab1ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
+
+            if (tab1TextBoxName.Text != "" && tab1TextBoxSourcePath.Text != "" && tab1TextBoxTargetPath.Text != "" && tab1SelectType.Text != "")
+            {
+                Projet.EasySave addWork = new Projet.EasySave();
+
+                int fCount = Directory.GetFiles(tab1TextBoxSourcePath.Text, "*", SearchOption.AllDirectories).Length;
+                long size = addWork.GetFileSizeSumFromDirectory(tab1TextBoxSourcePath.Text);
+
+                try
+                {
+                    addWork.addWork(size, fCount, tab1TextBoxName.Text, tab1TextBoxSourcePath.Text, tab1TextBoxTargetPath.Text, tab1SelectType.Text);
+                    tab1TextBoxName.Text = "";
+                    tab1TextBoxSourcePath.Text = "";
+                    tab1TextBoxTargetPath.Text = "";
+                    tab1SelectType.Text = "";
+                    tab1SaveWork_Loaded(sender, e);
+
+                } 
+                catch
+                {
+                   
+                   
+                        MessageBox.Show("une erreur est survenue");
+
+
+                    tab1TextBoxName.Text = "";
+                    tab1TextBoxSourcePath.Text = "";
+                    tab1TextBoxTargetPath.Text = "";
+                    tab1SelectType.Text = "";
+                }
+            }
+            else
+            {
+               
+               
+               
+                   MessageBox.Show("Veuillez remplir tout les champs");
+                
+            }
 
         }
 
@@ -99,7 +138,7 @@ namespace test2
             //clickedButton.Content = "...button clicked...";
             clickedButton.IsEnabled = false;
             tab3ButtonFrench.IsEnabled = true;
-            /*
+            
             tab1SaveWork.Header = "Add Save Work";
             tab2RunWork.Header = "Run Save Work";
             tab3Settings.Header = "Settings";
@@ -126,7 +165,7 @@ namespace test2
             tab3ButtonUserGuide.Content = "Open User Guide";
             tab3ButtonOpenConfig.Content = "Open Config";
             tab3ButtonOpenLogs.Content = "Open Logs";
-            */
+            
 
             Object[] contentToTranslate = {
                 tab1SaveWork.Header,
@@ -185,10 +224,72 @@ namespace test2
             Close();
         }
 
+        private void TargetPATH_Clicked(object sender, RoutedEventArgs e)
+        {
+           // Create OpenFileDialog
+            Ookii.Dialogs.Wpf.VistaFolderBrowserDialog openDlg = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
 
+            // Launch OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = openDlg.ShowDialog();
+            // Get the selected file name and display in a TextBox.
+            // Load content of file in a TextBlock
+            if (result == true)
+            {
+                tab1TextBoxTargetPath.Text = openDlg.SelectedPath;
+                // TextBlock1.Text = System.IO.File.ReadAllText(openFileDlg.FileName);
+            }
+            else
+            {
+                MessageBox.Show("Le répertoire de destination précisé est vide");
+            }
+
+        }
+        private void SourcePath_Clicked(object sender, RoutedEventArgs e)
+        {
+            // Create OpenFileDialog
+            Ookii.Dialogs.Wpf.VistaFolderBrowserDialog openDlg = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
+
+            // Launch OpenFileDialog by calling ShowDialog method
+            Nullable<bool> result = openDlg.ShowDialog();
+            // Get the selected file name and display in a TextBox.
+            // Load content of file in a TextBlock
+            if (result == true)
+            {
+                tab1TextBoxSourcePath.Text = openDlg.SelectedPath;
+                // TextBlock1.Text = System.IO.File.ReadAllText(openFileDlg.FileName);
+            }
+            else
+            {
+               
+                MessageBox.Show("Le répertoire source précisé est vide");
+            }
+
+        }
+
+        private void tab1SaveWork_Loaded(object sender, RoutedEventArgs e)
+        {
+            Projet.EasySave DisplayWorks = new Projet.EasySave();
+            tab1DataGrid.ItemsSource = DisplayWorks.displayWorks();
+        }
 
         
 
+        private void tab1DataGrid_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            e.Row.Header = (e.Row.GetIndex() + 1).ToString();
+        }
 
+        private void tab2DataGrid_Loaded(object sender, RoutedEventArgs e)
+        {
+            Projet.EasySave DisplayWorks = new Projet.EasySave();
+            tab2DataGrid.ItemsSource = DisplayWorks.displayWorks();
+        }
+
+        private void tab2DataGrid_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            e.Row.Header = (e.Row.GetIndex() + 1).ToString();
+        }
+
+       
     }
 }
