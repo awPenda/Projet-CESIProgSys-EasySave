@@ -23,13 +23,13 @@
                     <TextBlock Name="tab1TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
                     <!-- Save work name -->
                     <Label Name="tab1LabelName" Content="Save work name :" HorizontalAlignment="Left" Margin="24,132,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxName" HorizontalAlignment="Left" Margin="171,136,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
+                    <TextBox Name="tab1TextBoxName" HorizontalAlignment="Left" Margin="171,136,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="{x:Null}"/>
                     <!-- source path-->
                     <Label Name="tab1LabelSourcePath" Content="Source path :" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxSourcePath" HorizontalAlignment="Left" Margin="171,168,0,0" Text="SourcePath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tab1TextBoxSourcePath" HorizontalAlignment="Left" Margin="171,168,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <!-- target path-->
                     <Label Name="tab1LabelTargetPath" Content="Target path :" HorizontalAlignment="Left" Margin="24,196,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
-                    <TextBox Name="tab1TextBoxTargetPath" HorizontalAlignment="Left" Margin="171,200,0,0" Text="TargetPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox Name="tab1TextBoxTargetPath" HorizontalAlignment="Left" Margin="171,200,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <!-- save work type -->
                     <Label Name="tab1LabelType" Content="Save work type :" HorizontalAlignment="Left" Margin="24,228,0,0" VerticalAlignment="Top" Foreground="#FFC2E1FF"/>
                     <ComboBox Name="tab1SelectType" HorizontalAlignment="Left" Margin="171,230,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
@@ -60,7 +60,7 @@
                     <Label Name="tab2LabelNameApp" Content="EasySave" HorizontalAlignment="Left" Margin="16,78,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bauhaus 93" FontSize="18"/>
                     <TextBlock Name="tab2TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
                     <!-- Button to run a sequential save = all the save works one after the other-->
-                    <Button Name="tab2ButtonStartSequentialRun" Content="StartSequentialRun" HorizontalAlignment="Left" Margin="29,136,0,0" VerticalAlignment="Top" Width="279" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab2ButtonStartSequentialRun_Click">
+                    <Button Name="tab2ButtonStartSequentialRun" Content="Start Sequential Run" HorizontalAlignment="Left" Margin="29,136,0,0" VerticalAlignment="Top" Width="279" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab2ButtonStartSequentialRun_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
@@ -69,7 +69,7 @@
                     </Button>
                     <!-- Button and textBox to run only one save work -->
                     <TextBox Name="tab2TextBoxNumber" HorizontalAlignment="Left" Margin="34,192,0,0" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-                    <Button Name="tab2ButtonStartSingleRun" Content="StartSingleRun" HorizontalAlignment="Left" Margin="183,185,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab2ButtonStartSingleRun_Click">
+                    <Button Name="tab2ButtonStartSingleRun" Content="Start Single Run" HorizontalAlignment="Left" Margin="183,185,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab2ButtonStartSingleRun_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="15"/>
@@ -78,7 +78,7 @@
                     </Button>
                     <!-- Progress Bar -->
                     <ProgressBar Name="tab2ProgessBar" HorizontalAlignment="Left" Height="25" Margin="34,277,0,0" VerticalAlignment="Top" Width="269"/>
-                    <Label Content="Progress" HorizontalAlignment="Left" Margin="34,245,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFC2E1FF"/>
+                    <Label Name="tab2LabelProgessBar" Content="Progress" HorizontalAlignment="Left" Margin="34,245,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFC2E1FF"/>
                     <!-- Pause & Stop button -->
                     <Button Name="tab2ButtonPause" Content="Pause" HorizontalAlignment="Left" Margin="34,320,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#EE8F2A" Background="#EE8F2A"  Foreground="White" Height="32" Click="tab2ButtonPause_Click">
                         <Button.Resources>
@@ -98,7 +98,7 @@
                     <DataGrid Name="tab2DataGrid" Margin="340,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" />
                 </Grid>
             </TabItem>
-            
+
             <!--tab3, Settings-->
             <TabItem Name="tab3Settings" Header="Settings" Tag="SettingsTab" Margin="0,0,0,0" Width="200" BorderBrush="#000B14" Foreground="#FF000B14" Background="#FFC2E1FF">
                 <Grid Background="#001427">
@@ -108,11 +108,20 @@
                     <TextBlock Name="tab3TextBlockDescription" HorizontalAlignment="Left" Height="82" Margin="128,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Foreground="White" TextAlignment="Center" FontSize="14" FontFamily="Lato Light"><Run/><LineBreak/><Run Text="The best backup management software you can have !"/></TextBlock>
 
                     <!-- Language -->
-                    <Label Name="tab3LabelLang" Content="Language" HorizontalAlignment="Left" Margin="524,28,0,0" VerticalAlignment="Top" Width="72" Foreground="#FFC2E1FF"/>
-                    <ComboBox Name="tab2SelectLang" HorizontalAlignment="Left" Margin="500,60,0,0" VerticalAlignment="Top" Width="120" StaysOpenOnEdit="True" AutomationProperties.Name="SelectLanguage" SelectedIndex="0">
-                        <ComboBoxItem Name="tab2SelectLangEN" Content="English" Height="20" Width="100"/>
-                        <ComboBoxItem Name="tab2SelectLangFR" Content="Français" Height="20" Width="100"/>
-                    </ComboBox>
+                    <Button Name="tab3ButtonFrench" Content="French" HorizontalAlignment="Left" Margin="513,30,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab3ButtonFrench_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="tab3ButtonEnglish" Content="English" HorizontalAlignment="Left" Margin="513,76,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="32" Click="tab3ButtonEnglish_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="15"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
                     <!-- Buttons respectivly to open the user guide, config files and logs-->
                     <Button Name="tab3ButtonUserGuide" Content="Open User Guide" HorizontalAlignment="Left" Margin="56,178,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonUserGuide_Click">
                         <Button.Resources>

@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "rassim",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "153",
+    "FileTransferTime": "00:00:00.09",
+    "time": "24/11/2021 23:11:29"
+  },
+  {
+    "Name": "adel",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "153",
+    "FileTransferTime": "00:00:00.10",
+    "time": "24/11/2021 23:11:29"
+  },
+  {
+    "Name": "amelie",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "153",
+    "FileTransferTime": "00:00:00.08",
+    "time": "24/11/2021 23:12:24"
+  },
+  {
+    "Name": "cul",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.04",
+    "time": "25/11/2021 01:09:16"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.04",
+    "time": "02/12/2021 10:35:47"
+  }
+]
