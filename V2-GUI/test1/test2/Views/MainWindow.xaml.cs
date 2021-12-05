@@ -74,8 +74,59 @@ namespace test2
 
 
         //tab2 run save work
-        private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
+          private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
         {
+            Projet.EasySave exeseqWork = new Projet.EasySave();
+            try
+            {
+                exeseqWork.ExecuteAllWork();
+               MessageBox.Show("tous les travaux ont été executé avec succées");
+               
+
+            }
+            catch
+            {
+
+
+                MessageBox.Show("une erreur est survenue");
+
+
+            }
+        }
+
+        private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
+        {
+            if (tab2TextBoxNumber.Text != "")
+            {
+                Projet.EasySave exeWork = new Projet.EasySave();
+
+               
+
+                try
+                {
+                    exeWork.ExecuteWork(tab2TextBoxNumber.Text);
+
+                    MessageBox.Show("travail" + tab2TextBoxNumber.Text + "à été executé avec succes");
+
+                }
+                catch
+                {
+
+
+                    MessageBox.Show("une erreur est survenue");
+
+
+                }
+            }
+            else
+            {
+
+
+
+                MessageBox.Show("Veuillez remplir tout les champs");
+
+            }
+        }  
 
         }
 
