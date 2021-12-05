@@ -36,11 +36,20 @@ For a sequential run, the program will run each SaveWork one after the other, yo
 
 ## V2 - GUI
 
-### Single run
+###Add a save work 
+![image](https://user-images.githubusercontent.com/56393986/144767292-17092604-cbfb-40f6-9e53-59cb1b869d0b.png)
+
+###Run a save wok
+![image](https://user-images.githubusercontent.com/56393986/144767300-261335cc-72b0-4252-9010-36ffd98c35ab.png)
+
+#### Single run
 Single run starts a single backup process.
 
-### Sequential run
+#### Sequential run
 Sequential run starts all the backup processes one after the other.
+
+###Settings 
+![image](https://user-images.githubusercontent.com/56393986/144767306-d124222a-9ddb-46b3-a6fd-74b7806d71e6.png)
 
 
 ## about logs and state files
@@ -98,6 +107,11 @@ L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite 
 ### V1-console
 
 ### V2 - GUI
+
+
+
+
+
 
 ## À propos des fichiers logs et d'état
 L'historique des executions est sauvegardé dans un fichier log journalier ainsi que l'état des sauvegardes. 
