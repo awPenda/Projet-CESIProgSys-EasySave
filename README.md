@@ -120,11 +120,11 @@ Pour une exécution séquentielle, le programme exécutera chaque travail de sau
 
 ### Ajouter un travail de sauvegarde
 
-![image](https://user-images.githubusercontent.com/56393986/144767292-17092604-cbfb-40f6-9e53-59cb1b869d0b.png)
+![image](https://user-images.githubusercontent.com/56393986/144767604-588767a2-93ca-414a-84aa-7d6824829c94.png)
 
 ### Executer un travail de sauvegarde
 
-![image](https://user-images.githubusercontent.com/56393986/144767300-261335cc-72b0-4252-9010-36ffd98c35ab.png)
+![image](https://user-images.githubusercontent.com/56393986/144767594-f0d555fc-184f-4407-ad63-fea3688ffe18.png)
 
 #### Lancement unique
 L'éxecution unique lance un unique processus de sauvegarde. 
@@ -134,8 +134,7 @@ L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite 
 
 ### Paramètres 
 
-![image](https://user-images.githubusercontent.com/56393986/144767306-d124222a-9ddb-46b3-a6fd-74b7806d71e6.png)
-
+![image](https://user-images.githubusercontent.com/56393986/144767577-939f33fb-de84-4328-90c2-07663b5fbf63.png)
 
 
 
