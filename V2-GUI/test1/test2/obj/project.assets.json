@@ -85,19 +85,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sofia\\.nuget\\packages\\": {}
+    "C:\\Users\\MSI GAMER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "projectUniqueName": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
       "projectName": "test2",
-      "projectPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
-      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\obj\\",
+      "projectPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "packagesPath": "C:\\Users\\MSI GAMER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI GAMER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
