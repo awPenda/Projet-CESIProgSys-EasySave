@@ -36,11 +36,23 @@ For a sequential run, the program will run each SaveWork one after the other, yo
 
 ## V2 - GUI
 
-### Single run
+### Add a save work 
+
+![image](https://user-images.githubusercontent.com/56393986/144767292-17092604-cbfb-40f6-9e53-59cb1b869d0b.png)
+
+### Run a save wok
+
+![image](https://user-images.githubusercontent.com/56393986/144767300-261335cc-72b0-4252-9010-36ffd98c35ab.png)
+
+#### Single run
 Single run starts a single backup process.
 
-### Sequential run
+#### Sequential run
 Sequential run starts all the backup processes one after the other.
+
+### Settings 
+
+![image](https://user-images.githubusercontent.com/56393986/144767306-d124222a-9ddb-46b3-a6fd-74b7806d71e6.png)
 
 
 ## about logs and state files
@@ -85,19 +97,46 @@ state file structure :
 
 # Guide utilisateur 
 
-## Execution unique
+### V1-console
+
+
+#### Create a Savework
+Lorsque vous créerez un travail de sauvegarde, le programme va vous demander :
+   un nom, pour identifier votre travail de sauvegarde
+   un répertoire source, où le programme copiera les fichiers
+   un répertoire cible, où le programme collera les fichiers
+   un type de sauvegarde, complète ou différentielle
+
+#### Lancement unique
+L'éxecution unique lance un unique processus de sauvegarde. 
+Lorsque vous démarrerez une seule analyse, vous devrez spécifier le numéro du travail de sauvegarde que vous souhaitez effectuer.
+
+#### Lancement séquentiel
+L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite les uns des autres.
+Pour une exécution séquentielle, le programme exécutera chaque travail de sauvegarde l'un après l'autre, vous n'avez pas à vous en soucier, le programme vous informera en cas de problème.
+
+
+## V2 - GUI
+
+### Ajouter un travail de sauvegarde
+
+![image](https://user-images.githubusercontent.com/56393986/144767604-588767a2-93ca-414a-84aa-7d6824829c94.png)
+
+### Executer un travail de sauvegarde
+
+![image](https://user-images.githubusercontent.com/56393986/144767594-f0d555fc-184f-4407-ad63-fea3688ffe18.png)
+
+#### Lancement unique
 L'éxecution unique lance un unique processus de sauvegarde. 
 
-### V1-console
-
-### V2 - GUI
-
-## Execution séquentielle 
+#### Lancement séquentiel
 L'éxecution séquentielle lance tous les processsus de sauvegardes à la suite les uns des autres.
 
-### V1-console
+### Paramètres 
 
-### V2 - GUI
+![image](https://user-images.githubusercontent.com/56393986/144767577-939f33fb-de84-4328-90c2-07663b5fbf63.png)
+
+
 
 ## À propos des fichiers logs et d'état
 L'historique des executions est sauvegardé dans un fichier log journalier ainsi que l'état des sauvegardes. 
