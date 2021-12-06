@@ -1,17 +1,18 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "J35iir5qsTqB3oBPrTKS2jOo/6xmNz8gyOgFJzNzGj5JeCsqqKIEe/fGiVPecR/wJntgvaTJ1Z0IjKaARaR5Cg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
-=======
-  "dgSpecHash": "US4CAMsFBX7pwuUvfsrjbuDuFZRBI0qRmYmTWX/ddUdAbb/5WUS9jdeWCdb6BxKeeSRXXRZqueU9aSe+Lcr0HA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\sofia\\Source\\Repos\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj",
->>>>>>> 10539a3f9fd13faa783f9f8e92f20032ae724d47
   "expectedPackageFiles": [
     "C:\\Users\\MSI GAMER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\MSI GAMER\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
