@@ -449,5 +449,16 @@
     "TotalFilesSize": "40716",
     "NbFilesLeftToDo": "0",
     "Progression": "100%"
+  },
+  {
+    "Name": "worksave",
+    "SourceFilePath": "C:\\Source",
+    "TargetFilePath": "C:\\Destination",
+    "Time": "06/12/2021 11:28:31",
+    "State": "END",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "86",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
   }
 ]

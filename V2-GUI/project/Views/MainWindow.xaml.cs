@@ -90,7 +90,7 @@ namespace test2
             {
 
 
-                MessageBox.Show("une erreur est survenue ki nami");
+                MessageBox.Show("une erreur est survenue ki nami ya zeh");
 
 
             }
