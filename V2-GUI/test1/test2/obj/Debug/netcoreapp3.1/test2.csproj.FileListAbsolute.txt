@@ -40,6 +40,7 @@ C:\Users\sofia\source\repos\test2\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\tes
 C:\Users\sofia\source\repos\test2\V2-GUI\test1\test2\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
 C:\Users\sofia\source\repos\test2\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.csproj.CopyComplete
 C:\Users\sofia\source\repos\test2\V2-GUI\test1\test2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+<<<<<<< HEAD
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\bin\Debug\netcoreapp3.1\test2.exe
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\bin\Debug\netcoreapp3.1\test2.deps.json
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\bin\Debug\netcoreapp3.1\test2.runtimeconfig.json
@@ -63,3 +64,12 @@ C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\obj\Debug\netcoreapp3
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.dll
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.pdb
 C:\Users\MSI GAMER\Desktop\projet c# v2\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.genruntimeconfig.cache
+=======
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.csproj.AssemblyReference.cache
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2_MarkupCompile.cache
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2_MarkupCompile.lref
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.dll
+C:\Users\sofia\Source\Repos\CESIProgSys-EasySave\V2-GUI\test1\test2\obj\Debug\netcoreapp3.1\test2.pdb
+>>>>>>> 10539a3f9fd13faa783f9f8e92f20032ae724d47

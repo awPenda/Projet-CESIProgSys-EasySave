@@ -91,11 +91,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2.2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "projectUniqueName": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
       "projectName": "test2",
-      "projectPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2.2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "projectPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
       "packagesPath": "C:\\Users\\MSI GAMER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2.2\\V2-GUI\\test1\\test2\\obj\\",
+      "outputPath": "C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,5 +158,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\MSI GAMER\\Desktop\\projet c# v2\\V2-GUI\\test1\\test2\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

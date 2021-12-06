@@ -74,13 +74,13 @@ namespace test2
 
 
         //tab2 run save work
-        private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
+          private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
         {
             Projet.EasySave exeseqWork = new Projet.EasySave();
             try
             {
                 exeseqWork.ExecuteAllWork();
-
+               MessageBox.Show("tous les travaux ont été executé avec succées");
                
 
             }
@@ -126,6 +126,13 @@ namespace test2
                 MessageBox.Show("Veuillez remplir tout les champs");
 
             }
+        }  
+
+        }
+
+        private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void tab2ButtonPause_Click(object sender, RoutedEventArgs e)
