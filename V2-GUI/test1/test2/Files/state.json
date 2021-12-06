@@ -58,33 +58,88 @@
     "Name": "fsdfss",
     "SourceFilePath": "C:\\Destination",
     "TargetFilePath": "C:\\Source",
-    "Time": "04/12/2021 19:18:27",
-    "State": "INACTIVE",
+    "Time": "05/12/2021 05:38:38",
+    "State": "END",
     "TotalFilesToCopy": "1",
     "TotalFilesSize": "86",
     "NbFilesLeftToDo": "0",
-    "Progression": "0%"
+    "Progression": "100%"
   },
   {
     "Name": "dqqdq",
     "SourceFilePath": "C:\\Destination",
     "TargetFilePath": "C:\\Source",
-    "Time": "04/12/2021 19:31:00",
-    "State": "INACTIVE",
+    "Time": "05/12/2021 05:26:37",
+    "State": "END",
     "TotalFilesToCopy": "1",
     "TotalFilesSize": "86",
     "NbFilesLeftToDo": "0",
-    "Progression": "0%"
+    "Progression": "100%"
   },
   {
     "Name": "mpmpmp",
     "SourceFilePath": "C:\\Destination",
     "TargetFilePath": "C:\\Source",
-    "Time": "04/12/2021 19:49:19",
-    "State": "INACTIVE",
+    "Time": "05/12/2021 05:26:39",
+    "State": "END",
     "TotalFilesToCopy": "1",
     "TotalFilesSize": "86",
     "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "test4",
+    "SourceFilePath": "C:\\Users\\MSI GAMER\\Desktop\\Biped",
+    "TargetFilePath": "C:\\Users\\MSI GAMER\\Documents\\GitHub",
+    "Time": "05/12/2021 05:32:47",
+    "State": "END",
+    "TotalFilesToCopy": "536",
+    "TotalFilesSize": "10523498",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "hello",
+    "SourceFilePath": "D:\\XAMP",
+    "TargetFilePath": "C:\\Users\\MSI GAMER\\Downloads\\Sekiro - Shadows Die Twice [FitGirl Repack]",
+    "Time": "05/12/2021 05:38:32",
+    "State": "Active",
+    "TotalFilesToCopy": "16",
+    "TotalFilesSize": "9457966791",
+    "NbFilesLeftToDo": "0",
     "Progression": "0%"
+  },
+  {
+    "Name": "idk",
+    "SourceFilePath": "D:\\Riot Games",
+    "TargetFilePath": "D:\\XAMP\\img",
+    "Time": "05/12/2021 05:56:22",
+    "State": "END",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "1150",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "xdd",
+    "SourceFilePath": "C:\\Users\\MSI GAMER\\Desktop\\Garant\\3 dernier bulletin de salaire",
+    "TargetFilePath": "C:\\Users\\MSI GAMER\\Desktop\\Garant",
+    "Time": "05/12/2021 05:57:05",
+    "State": "Active",
+    "TotalFilesToCopy": "10",
+    "TotalFilesSize": "3406196",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "nnn",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "06/12/2021 02:55:27",
+    "State": "END",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "40716",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
   }
 ]
