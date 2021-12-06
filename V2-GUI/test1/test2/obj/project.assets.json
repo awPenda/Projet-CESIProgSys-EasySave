@@ -90,11 +90,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "projectUniqueName": "C:\\Users\\sofia\\Source\\Repos\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj",
       "projectName": "test2",
-      "projectPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
+      "projectPath": "C:\\Users\\sofia\\Source\\Repos\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\test2.csproj",
       "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\obj\\",
+      "outputPath": "C:\\Users\\sofia\\Source\\Repos\\CESIProgSys-EasySave\\V2-GUI\\test1\\test2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config",
