@@ -336,6 +336,17 @@ namespace test2
             e.Row.Header = (e.Row.GetIndex() + 1).ToString();
         }
 
-       
+        private void tab3ButtonConfigureBuisnessSoftware_Click(object sender, RoutedEventArgs e)
+        {
+            //here you just have to change log.json with the file you want tu put buisness software
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
+
+        }
+
+        private void tab3ButtonConfigureTypeFilesToEncrypt_Click(object sender, RoutedEventArgs e)
+        {
+            //here you just have to change log.json with the file you want tu put the extensions for the files to encrypt
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
+        }
     }
 }

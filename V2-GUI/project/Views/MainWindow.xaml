@@ -129,14 +129,14 @@
                         </Button.Resources>
                     </Button>
                     <!-- Buttons respectivly to open the user guide, config files and logs-->
-                    <Button Name="tab3ButtonUserGuide" Content="Open User Guide" HorizontalAlignment="Left" Margin="56,178,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonUserGuide_Click">
+                    <Button Name="tab3ButtonUserGuide" Content="Open User Guide" HorizontalAlignment="Left" Margin="326,0,0,0" VerticalAlignment="Center" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonUserGuide_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="20"/>
                             </Style>
                         </Button.Resources>
                     </Button>
-                    <Button Name="tab3ButtonOpenConfig" Content="Open Config" HorizontalAlignment="Left" Margin="191,238,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonOpenConfig_Click">
+                    <Button Name="tab3ButtonOpenConfig" Content="Open Config" HorizontalAlignment="Left" Margin="326,233,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonOpenConfig_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="20"/>
@@ -146,6 +146,20 @@
                     <Button Name="tab3ButtonOpenLogs" Content="Open Logs" HorizontalAlignment="Left" Margin="326,298,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonOpenLogs_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="tab3ButtonConfigureBuisnessSoftware" Content="Configure Buisness Software" HorizontalAlignment="Left" Margin="33,0,0,0" VerticalAlignment="Center" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" RenderTransformOrigin="0.5,0.5" Click="tab3ButtonConfigureBuisnessSoftware_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="20"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                    <Button Name="tab3ButtonConfigureTypeFilesToEncrypt" Content="Configure Type of Files to Encrypt" HorizontalAlignment="Left" Margin="33,233,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#FF0069CC" Background="#FF0069CC"  Foreground="White" Height="42" Click="tab3ButtonConfigureTypeFilesToEncrypt_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="20"/>
                             </Style>
                         </Button.Resources>
