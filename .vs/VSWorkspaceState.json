@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Projet Console Final",
-    "\\Projet Console Final\\Projet",
-    "\\Projet Console Final\\Projet\\EasySave",
     "\\V1-console",
     "\\V1-console\\V1.1",
-    "\\V1-console\\V1.1\\EasySave"
+    "\\V1-console\\V1.1\\EasySave",
+    "\\V2-GUI",
+    "\\V2-GUI\\test1",
+    "\\V2-GUI\\test1\\test2"
   ],
-  "SelectedNode": "\\Projet Console Final\\Projet\\EasySave\\Program.cs",
+  "SelectedNode": "\\V2-GUI\\test1\\test2\\test2.sln",
   "PreviewInSolutionExplorer": false
 }

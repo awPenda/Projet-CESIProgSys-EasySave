@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gOGA5HJ+d1nafGT2E/vftU8rOmL1OfriTNaCqaKYPisFcWA5CtMihQmKlgTohbMNDwM2/uuWrMy1M4ToiZewjg==",
+  "dgSpecHash": "tP179Khq2JkJW2kMC/Ilm/ikGABkWLYITCEOphHk6iZNVPI9Uwn5hkb8nXJ8AonIydpamAe4bmm0DwkG+nOOzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sofia\\source\\repos\\test2\\V2-GUI\\test1\\test2\\test2.csproj",
+  "projectFilePath": "S:\\projet c# v2\\V2-GUI\\test1\\test2\\test2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sofia\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\sofia\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
+    "C:\\Users\\MSI GAMER\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\MSI GAMER\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
