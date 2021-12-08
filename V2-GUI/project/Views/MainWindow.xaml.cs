@@ -176,6 +176,8 @@ namespace test2
             tab3ButtonUserGuide.Content = "Ouvrir le guide utilisateur";
             tab3ButtonOpenConfig.Content = "Ouvrir la configuration";
             tab3ButtonOpenLogs.Content = "Ouvrir les logs";
+            tab3ButtonConfigureBuisnessSoftware.Content = "Configurer le Logiciel Métier";
+            tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configurer le type de fichier à chiffrer";
 
         }
         private void tab3ButtonEnglish_Click(object sender, RoutedEventArgs e)
@@ -211,7 +213,9 @@ namespace test2
             tab3ButtonUserGuide.Content = "Open User Guide";
             tab3ButtonOpenConfig.Content = "Open Config";
             tab3ButtonOpenLogs.Content = "Open Logs";
-            
+            tab3ButtonConfigureBuisnessSoftware.Content = "Configure Buisness Software";
+            tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configure Type of Files to Encrypt";
+
 
             Object[] contentToTranslate = {
                 tab1SaveWork.Header,
