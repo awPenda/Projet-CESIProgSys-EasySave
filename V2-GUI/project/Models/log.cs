@@ -14,6 +14,9 @@ namespace Projet
         public string FileSize { get; set; }
         public string FileTransferTime { get; set; }
         public string time { get; set; }
+        public string timetocrypt { get; set; }
+        public string extensions { get; set; }
+
 
     }
 }

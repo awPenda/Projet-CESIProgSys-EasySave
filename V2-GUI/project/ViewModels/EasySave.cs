@@ -187,17 +187,11 @@ namespace Projet
             var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
             int q = workList.Count;
            // MessageBox.Show("haha" +Convert.ToString( workList.Count) + "hahha");
-           for (int j =q;j==1; j-- ) 
+           for (int j =0;j==q; j++ ) 
             {
-               
-                ExecuteWork(Convert.ToString(j));
-
-
-                ExecuteWork("2");
                 ExecuteWork("1");
-
-
-
+   
+           
             }
 
 
@@ -218,5 +212,6 @@ namespace Projet
 
             return currentSize + subDirSize;
         }
+
     }
 }

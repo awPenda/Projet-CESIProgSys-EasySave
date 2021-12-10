@@ -175,5 +175,6 @@
                 </Style>
             </Button.Resources>
         </Button>
+        <TextBox x:Name="tab3logicielmetier" Text="TextBox" TextWrapping="Wrap" Width="120" Margin="122,147,445,239" Visibility="Hidden"/>
     </Grid>
 </Window>
