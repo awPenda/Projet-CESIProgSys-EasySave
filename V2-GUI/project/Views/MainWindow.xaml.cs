@@ -23,7 +23,7 @@ namespace test2
     {
         public MainWindow()
         {
-          InitializeComponent();
+            //InitializeComponent();
         }
 
 
@@ -47,12 +47,12 @@ namespace test2
                     tab1SelectType.Text = "";
                     tab1SaveWork_Loaded(sender, e);
 
-                } 
+                }
                 catch
                 {
-                   
-                   
-                        MessageBox.Show("une erreur est survenue");
+
+
+                    MessageBox.Show("une erreur est survenue");
 
 
                     tab1TextBoxName.Text = "";
@@ -63,11 +63,11 @@ namespace test2
             }
             else
             {
-               
-               
-               
-                   MessageBox.Show("Veuillez remplir tout les champs");
-                
+
+
+
+                MessageBox.Show("Veuillez remplir tout les champs");
+
             }
 
         }
@@ -84,7 +84,7 @@ namespace test2
                 MessageBox.Show("tous les travaux sont executées ");
                 tab2DataGrid_Loaded(sender, e);
                 tab1SaveWork_Loaded(sender, e);
-                
+
             }
             catch
             {
@@ -102,7 +102,7 @@ namespace test2
             {
                 Projet.EasySave exeWork = new Projet.EasySave();
 
-               
+
 
                 try
                 {
@@ -144,7 +144,7 @@ namespace test2
 
         private void tab3ButtonFrench_Click(object sender, RoutedEventArgs e)
         {
-            
+
             Button clickedButton = (Button)sender;
             //clickedButton.Content = "...button clicked...";
             clickedButton.IsEnabled = false;
@@ -186,7 +186,7 @@ namespace test2
             //clickedButton.Content = "...button clicked...";
             clickedButton.IsEnabled = false;
             tab3ButtonFrench.IsEnabled = true;
-            
+
             tab1SaveWork.Header = "Add Save Work";
             tab2RunWork.Header = "Run Save Work";
             tab3Settings.Header = "Settings";
@@ -266,7 +266,7 @@ namespace test2
 
         }
 
-        
+
 
         //button close
         private void CloseButton_Click(object sender, RoutedEventArgs e)
@@ -276,7 +276,7 @@ namespace test2
 
         private void TargetPATH_Clicked(object sender, RoutedEventArgs e)
         {
-           // Create OpenFileDialog
+            // Create OpenFileDialog
             Ookii.Dialogs.Wpf.VistaFolderBrowserDialog openDlg = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
 
             // Launch OpenFileDialog by calling ShowDialog method
@@ -310,7 +310,7 @@ namespace test2
             }
             else
             {
-               
+
                 MessageBox.Show("Le répertoire source précisé est vide");
             }
 
@@ -322,7 +322,7 @@ namespace test2
             tab1DataGrid.ItemsSource = DisplayWorks.displayWorks();
         }
 
-        
+
 
         private void tab1DataGrid_LoadingRow(object sender, DataGridRowEventArgs e)
         {
@@ -343,14 +343,51 @@ namespace test2
         private void tab3ButtonConfigureBuisnessSoftware_Click(object sender, RoutedEventArgs e)
         {
             //here you just have to change log.json with the file you want tu put buisness software
-            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
+           // OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
+            // Create OpenFileDialog
+            Ookii.Dialogs.Wpf.VistaFolderBrowserDialog openDlg = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
+
+            // Launch OpenFileDialog by calling ShowDialog method
+
+            Nullable<bool> result = openDlg.ShowDialog();
+
+            // Get the selected file name and display in a TextBox.
+            // Load content of file in a TextBlock
+            // Load content of file in a TextBlock
+            if (result == true)
+            {
+                //tab1TextBoxSourcePath.Text = openDlg.SelectedPath;
+                tab3logicielmetier.Text = openDlg.SelectedPath;
+                // TextBlock1.Text = System.IO.File.ReadAllText(openFileDlg.FileName);
+            }
 
         }
 
         private void tab3ButtonConfigureTypeFilesToEncrypt_Click(object sender, RoutedEventArgs e)
         {
+            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\extensions.json");
+
             //here you just have to change log.json with the file you want tu put the extensions for the files to encrypt
-            OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\log.json");
+
+            /* Microsoft.Win32.OpenFileDialog dialog = new Microsoft.Win32.OpenFileDialog();
+             dialog.Multiselect = true;
+             dialog.InitialDirectory = tab1TextBoxSourcePath.Text;
+             if (tab1TextBoxSourcePath.Text != "")
+             {
+                 dialog.ShowDialog();
+
+                 foreach (var file in dialog.FileNames)
+                 {
+                     var fileToCrypt = file.Replace(tab1TextBoxSourcePath.Text, tab1TextBoxTargetPath.Text);
+                     Projet.CryptoSoft dr = new Projet.CryptoSoft();
+                     dr.Cryptage(tab1TextBoxSourcePath.Text, tab1TextBoxTargetPath.Text);
+                 }
+             }
+             else
+             { MessageBox.Show("veuillez entrer un chemin valide"); }
+             }
+         }
+            */
         }
     }
 }
