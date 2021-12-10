@@ -187,7 +187,7 @@ namespace Projet
             var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
             int q = workList.Count;
            // MessageBox.Show("haha" +Convert.ToString( workList.Count) + "hahha");
-           for (int j =0;j==q; j++ ) 
+           for (int j =0;j<q; j++ ) 
             {
                 ExecuteWork("1");
    

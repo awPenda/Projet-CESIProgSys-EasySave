@@ -476,22 +476,22 @@
     "Name": "aww",
     "SourceFilePath": "C:\\Users\\MSI GAMER\\Documents\\VPProjects",
     "TargetFilePath": "C:\\Users\\MSI GAMER\\Documents",
-    "Time": "10/12/2021 06:00:55",
-    "State": "INACTIVE",
+    "Time": "10/12/2021 10:36:14",
+    "State": "END",
     "TotalFilesToCopy": "12",
     "TotalFilesSize": "6971392",
     "NbFilesLeftToDo": "0",
-    "Progression": "0%"
+    "Progression": "100%"
   },
   {
     "Name": "AWWWI",
     "SourceFilePath": "C:\\Users\\MSI GAMER\\Pictures",
     "TargetFilePath": "D:\\",
-    "Time": "10/12/2021 06:11:34",
-    "State": "INACTIVE",
+    "Time": "10/12/2021 10:37:28",
+    "State": "END",
     "TotalFilesToCopy": "20",
     "TotalFilesSize": "5553443",
     "NbFilesLeftToDo": "0",
-    "Progression": "0%"
+    "Progression": "100%"
   }
 ]
