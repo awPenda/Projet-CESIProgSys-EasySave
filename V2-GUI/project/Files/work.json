@@ -10,5 +10,17 @@
     "repS": "C:\\Users\\MSI GAMER\\Pictures",
     "repC": "D:\\",
     "type": "Full"
+  },
+  {
+    "name": "test123456",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "type": "Full"
+  },
+  {
+    "name": "tresdgffg",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "type": "Full"
   }
 ]

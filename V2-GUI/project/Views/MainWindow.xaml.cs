@@ -21,6 +21,9 @@ namespace test2
     /// </summary>
     public partial class MainWindow : Window
     {
+        string printError, printFillOut, printExecutedworks, printHasBeenExecuted, printEmptyTargetDir, printEmptySourceDir;
+        
+        
         public MainWindow()
         {
             //InitializeComponent();
@@ -52,7 +55,7 @@ namespace test2
                 {
 
 
-                    MessageBox.Show("une erreur est survenue");
+                    MessageBox.Show(printError);
 
 
                     tab1TextBoxName.Text = "";
@@ -66,7 +69,7 @@ namespace test2
 
 
 
-                MessageBox.Show("Veuillez remplir tout les champs");
+                MessageBox.Show(printFillOut);
 
             }
 
@@ -81,18 +84,14 @@ namespace test2
             {
                 exeseqWork.ExecuteAllWork();
 
-                MessageBox.Show("tous les travaux sont executées ");
+                MessageBox.Show(printExecutedworks);
                 tab2DataGrid_Loaded(sender, e);
                 tab1SaveWork_Loaded(sender, e);
 
             }
             catch
             {
-
-
-                MessageBox.Show("une erreur est survenue ki nami ya zeh");
-
-
+                MessageBox.Show(printError);
             }
         }
 
@@ -108,14 +107,14 @@ namespace test2
                 {
                     exeWork.ExecuteWork(tab2TextBoxNumber.Text);
                     tab1SaveWork_Loaded(sender, e);
-                    MessageBox.Show("travail" + tab2TextBoxNumber.Text + "à été executé avec succes");
+                    MessageBox.Show(tab2TextBoxNumber.Text + printHasBeenExecuted);
 
                 }
                 catch
                 {
 
 
-                    MessageBox.Show("une erreur est survenue");
+                    MessageBox.Show(printError);
 
 
                 }
@@ -125,7 +124,7 @@ namespace test2
 
 
 
-                MessageBox.Show("Veuillez remplir tout les champs");
+                MessageBox.Show(printFillOut);
 
             }
         }
@@ -178,6 +177,13 @@ namespace test2
             tab3ButtonOpenLogs.Content = "Ouvrir les logs";
             tab3ButtonConfigureBuisnessSoftware.Content = "Configurer le Logiciel Métier";
             tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configurer le type de fichier à chiffrer";
+            printError = "Une erreur est survenue";
+            printFillOut = "Veuillez remplir tous les champs";
+            printExecutedworks = "Tous les travaux sont executées ";
+            printHasBeenExecuted = "à été executé avec succes";
+            printEmptyTargetDir = "Le répertoire de destination précisé est vide";
+            printEmptySourceDir = "Le répertoire source précisé est vide";
+
 
         }
         private void tab3ButtonEnglish_Click(object sender, RoutedEventArgs e)
@@ -215,6 +221,12 @@ namespace test2
             tab3ButtonOpenLogs.Content = "Open Logs";
             tab3ButtonConfigureBuisnessSoftware.Content = "Configure Buisness Software";
             tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configure Type of Files to Encrypt";
+            printError = "An error has occured";
+            printFillOut = "please complete all fields";
+            printExecutedworks = "all save works has been executed";
+            printHasBeenExecuted = "has been successfully executed";
+            printEmptyTargetDir = "The specified destination directory is empty";
+            printEmptySourceDir = "The specified source directory is empty";
 
 
             Object[] contentToTranslate = {
@@ -290,7 +302,7 @@ namespace test2
             }
             else
             {
-                MessageBox.Show("Le répertoire de destination précisé est vide");
+                MessageBox.Show(printEmptyTargetDir);
             }
 
         }
@@ -311,7 +323,7 @@ namespace test2
             else
             {
 
-                MessageBox.Show("Le répertoire source précisé est vide");
+                MessageBox.Show(printEmptySourceDir);
             }
 
         }

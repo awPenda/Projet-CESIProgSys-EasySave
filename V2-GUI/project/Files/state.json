@@ -493,5 +493,27 @@
     "TotalFilesSize": "5553443",
     "NbFilesLeftToDo": "0",
     "Progression": "0%"
+  },
+  {
+    "Name": "test123456",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "10/12/2021 09:47:36",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "6",
+    "TotalFilesSize": "0",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "tresdgffg",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "10/12/2021 09:49:08",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "6",
+    "TotalFilesSize": "0",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
   }
 ]
