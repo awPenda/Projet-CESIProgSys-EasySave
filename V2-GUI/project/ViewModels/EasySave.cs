@@ -7,10 +7,12 @@ using System.Linq;
 using System.Windows;
 using System.Diagnostics;
 
-namespace Projet
+namespace test2
 {
     class EasySave
     {
+        ChangeLang lang = new ChangeLang();
+
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
@@ -72,7 +74,7 @@ namespace Projet
                     // Switch the language of the outpoot according to the choice of the user when he started the program
                    
 
-                        MessageBox.Show("Travail ajouté avec succès !\n");
+                        MessageBox.Show(lang.printSaveWorkAdded);
 
                     
                    
@@ -86,7 +88,7 @@ namespace Projet
             {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
 
-                MessageBox.Show("Un travail avec le meme nom existe déjà !\n");
+                MessageBox.Show(lang.printSaveWorkAlreadyExist);
 
                 
               
@@ -169,15 +171,16 @@ namespace Projet
                 else
                 {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
-
-                    MessageBox.Show("No backup job with entry " + inputUtilisateur + " found !\n");
+                    
+                    MessageBox.Show($"{lang.printNoSaveWorkFound} {inputUtilisateur} \n");
 
 
                 }
             }
             else
             {
-                MessageBox.Show("Impossible de lancer car un logiciel métier est en cours d'éxecution");
+                //mettre en pause puis lancer quand le logiciel métier est fermé
+                MessageBox.Show(lang.printImpossibleToRunBuissnessSoftwareRunning);
             }
 
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Projet
+namespace test2
 {
     //a backup interface that contains the definition of the backup method (abstract factory interface )
     interface IBackup

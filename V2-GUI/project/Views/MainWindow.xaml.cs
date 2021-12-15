@@ -21,9 +21,8 @@ namespace test2
     /// </summary>
     public partial class MainWindow : Window
     {
-        string printError, printFillOut, printExecutedworks, printHasBeenExecuted, printEmptyTargetDir, printEmptySourceDir;
-        
-        
+        ChangeLang lang = new ChangeLang();
+
         public MainWindow()
         {
             //InitializeComponent();
@@ -36,7 +35,7 @@ namespace test2
 
             if (tab1TextBoxName.Text != "" && tab1TextBoxSourcePath.Text != "" && tab1TextBoxTargetPath.Text != "" && tab1SelectType.Text != "")
             {
-                Projet.EasySave addWork = new Projet.EasySave();
+                test2.EasySave addWork = new test2.EasySave();
 
                 int fCount = Directory.GetFiles(tab1TextBoxSourcePath.Text, "*", SearchOption.AllDirectories).Length;
                 long size = addWork.GetFileSizeSumFromDirectory(tab1TextBoxSourcePath.Text);
@@ -55,7 +54,7 @@ namespace test2
                 {
 
 
-                    MessageBox.Show(printError);
+                    MessageBox.Show(lang.printError);
 
 
                     tab1TextBoxName.Text = "";
@@ -69,7 +68,7 @@ namespace test2
 
 
 
-                MessageBox.Show(printFillOut);
+                MessageBox.Show(lang.printFillOut);
 
             }
 
@@ -79,19 +78,19 @@ namespace test2
         //tab2 run save work
         private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
         {
-            Projet.EasySave exeseqWork = new Projet.EasySave();
+            test2.EasySave exeseqWork = new test2.EasySave();
             try
             {
                 exeseqWork.ExecuteAllWork();
 
-                MessageBox.Show(printExecutedworks);
+                MessageBox.Show(lang.printExecutedworks);
                 tab2DataGrid_Loaded(sender, e);
                 tab1SaveWork_Loaded(sender, e);
 
             }
             catch
             {
-                MessageBox.Show(printError);
+                MessageBox.Show(lang.printError);
             }
         }
 
@@ -99,7 +98,7 @@ namespace test2
         {
             if (tab2TextBoxNumber.Text != "")
             {
-                Projet.EasySave exeWork = new Projet.EasySave();
+                test2.EasySave exeWork = new test2.EasySave();
 
 
 
@@ -107,14 +106,14 @@ namespace test2
                 {
                     exeWork.ExecuteWork(tab2TextBoxNumber.Text);
                     tab1SaveWork_Loaded(sender, e);
-                    MessageBox.Show(tab2TextBoxNumber.Text + printHasBeenExecuted);
+                    MessageBox.Show(tab2TextBoxNumber.Text + lang.printHasBeenExecuted);
 
                 }
                 catch
                 {
 
 
-                    MessageBox.Show(printError);
+                    MessageBox.Show(lang.printError);
 
 
                 }
@@ -124,7 +123,7 @@ namespace test2
 
 
 
-                MessageBox.Show(printFillOut);
+                MessageBox.Show(lang.printFillOut);
 
             }
         }
@@ -177,14 +176,8 @@ namespace test2
             tab3ButtonOpenLogs.Content = "Ouvrir les logs";
             tab3ButtonConfigureBuisnessSoftware.Content = "Configurer le Logiciel Métier";
             tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configurer le type de fichier à chiffrer";
-            printError = "Une erreur est survenue";
-            printFillOut = "Veuillez remplir tous les champs";
-            printExecutedworks = "Tous les travaux sont executées ";
-            printHasBeenExecuted = "à été executé avec succes";
-            printEmptyTargetDir = "Le répertoire de destination précisé est vide";
-            printEmptySourceDir = "Le répertoire source précisé est vide";
 
-
+            MessageBox.Show(lang.changeMessageBoxLang("french"));
         }
         private void tab3ButtonEnglish_Click(object sender, RoutedEventArgs e)
         {
@@ -221,14 +214,9 @@ namespace test2
             tab3ButtonOpenLogs.Content = "Open Logs";
             tab3ButtonConfigureBuisnessSoftware.Content = "Configure Buisness Software";
             tab3ButtonConfigureTypeFilesToEncrypt.Content = "Configure Type of Files to Encrypt";
-            printError = "An error has occured";
-            printFillOut = "please complete all fields";
-            printExecutedworks = "all save works has been executed";
-            printHasBeenExecuted = "has been successfully executed";
-            printEmptyTargetDir = "The specified destination directory is empty";
-            printEmptySourceDir = "The specified source directory is empty";
 
-
+            MessageBox.Show(lang.changeMessageBoxLang("english"));
+            /*
             Object[] contentToTranslate = {
                 tab1SaveWork.Header,
                 tab2RunWork.Header,
@@ -255,11 +243,20 @@ namespace test2
                 tab3ButtonEnglish.Content,
                 tab3ButtonUserGuide.Content,
                 tab3ButtonOpenConfig.Content,
-                tab3ButtonOpenLogs.Content
+                tab3ButtonOpenLogs.Content,
+                tab3ButtonConfigureBuisnessSoftware.Content,
+                tab3ButtonConfigureTypeFilesToEncrypt.Content,
+                lang.printError,
+                lang.printFillOut,
+                lang.printExecutedworks,
+                lang.printHasBeenExecuted,
+                lang.printEmptyTargetDir,
+                lang.printEmptySourceDir
             };
+            */
 
-            ChangeLang test = new ChangeLang();
-            test.changeLangFunction(contentToTranslate, test.englishTranslation);
+            
+            
         }
         private void tab3ButtonUserGuide_Click(object sender, RoutedEventArgs e)
         {
@@ -302,7 +299,7 @@ namespace test2
             }
             else
             {
-                MessageBox.Show(printEmptyTargetDir);
+                MessageBox.Show(lang.printEmptyTargetDir);
             }
 
         }
@@ -323,14 +320,14 @@ namespace test2
             else
             {
 
-                MessageBox.Show(printEmptySourceDir);
+                MessageBox.Show(lang.printEmptySourceDir);
             }
 
         }
 
         private void tab1SaveWork_Loaded(object sender, RoutedEventArgs e)
         {
-            Projet.EasySave DisplayWorks = new Projet.EasySave();
+            test2.EasySave DisplayWorks = new test2.EasySave();
             tab1DataGrid.ItemsSource = DisplayWorks.displayWorks();
         }
 
@@ -343,7 +340,7 @@ namespace test2
 
         private void tab2DataGrid_Loaded(object sender, RoutedEventArgs e)
         {
-            Projet.EasySave DisplayWorks = new Projet.EasySave();
+            test2.EasySave DisplayWorks = new test2.EasySave();
             tab2DataGrid.ItemsSource = DisplayWorks.displayWorks();
         }
 
@@ -391,7 +388,7 @@ namespace test2
                  foreach (var file in dialog.FileNames)
                  {
                      var fileToCrypt = file.Replace(tab1TextBoxSourcePath.Text, tab1TextBoxTargetPath.Text);
-                     Projet.CryptoSoft dr = new Projet.CryptoSoft();
+                     test2.CryptoSoft dr = new test2.CryptoSoft();
                      dr.Cryptage(tab1TextBoxSourcePath.Text, tab1TextBoxTargetPath.Text);
                  }
              }

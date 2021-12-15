@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 
-namespace Projet
+namespace test2
 {
     public class CryptoSoft
     {

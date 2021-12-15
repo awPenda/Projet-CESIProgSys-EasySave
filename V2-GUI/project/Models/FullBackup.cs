@@ -7,7 +7,7 @@ using System.Text;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace Projet
+namespace test2
 {
     class FullBackup : IBackup
     {
