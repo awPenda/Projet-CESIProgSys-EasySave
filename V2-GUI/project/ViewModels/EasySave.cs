@@ -8,11 +8,16 @@ using System.Windows;
 using System.Diagnostics;
 using System.Threading;
 
+
 namespace test2
 {
     class EasySave
     {
+        //object for the thread lock for critical section
+        static readonly object _object = new object();
+
         ChangeLang lang = new ChangeLang();
+
 
 
         // a method that will allow to create a backupwork
@@ -92,88 +97,88 @@ namespace test2
             return stateList;
         }
 
-        // a method that will allow to execute a backupwork created
-        public void ExecuteWork(string inputUtilisateur) 
+        public void ExecuteWork(string inputUtilisateur) // a method that will allow to execute a backupwork created
         {
-            if (Process.GetProcessesByName("Calculator").Length == 0)
+            //beginning of critical section
+            lock (_object)
             {
-                //Read the JSON file
-                var jsonData = File.ReadAllText(Work.filePath);
-                //convert a string into an object for JSON
-                var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
-
-                //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
-                if (workList.Count >= Convert.ToInt32(inputUtilisateur))
+                if (Process.GetProcessesByName("Calculator").Length == 0)
                 {
-                    int index = Convert.ToInt32(inputUtilisateur) - 1;
-                    string sourceDir = workList.ElementAt(index).repS;
-                    string backupDir = workList.ElementAt(index).repC;
-                    string name = workList.ElementAt(index).name;
-                    long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
+                    var jsonData = File.ReadAllText(Work.filePath); //Read the JSON file
+                    var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>(); //convert a string into an object for JSON
 
-                    //this condition is used to execute the type of backup chosen in the creation 
-                    if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential")
+                    if (workList.Count >= Convert.ToInt32(inputUtilisateur)) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
                     {
-                        var jsonDataState2 = File.ReadAllText(Etat.filePath);
-                        var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+                        int index = Convert.ToInt32(inputUtilisateur) - 1;
+                        string sourceDir = workList.ElementAt(index).repS;
+                        string backupDir = workList.ElementAt(index).repC;
+                        string name = workList.ElementAt(index).name;
+                        long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
 
-                        int indexState = 0;
-                        for (int i = 0; i < stateList2.Count; i++)
+                        //this condition is used to execute the type of backup chosen in the creation 
+                        if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential")
                         {
-                            if (stateList2[i].Name == workList[index].name)
+                            var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+
+                            int indexState = 0;
+                            for (int i = 0; i < stateList2.Count; i++)
                             {
-                                indexState = i;
-                                break;
+                                if (stateList2[i].Name == workList[index].name)
+                                {
+                                    indexState = i;
+                                    break;
+                                }
                             }
+
+                            stateList2[indexState].State = "Active";
+
+                            string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
+                            File.WriteAllText(Etat.filePath, strResultJsonState2);
+                            // differential backup
+                            DifferentialBackup SD = new DifferentialBackup();
+                            SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
+
                         }
+                        else
+                        {
+                            var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
 
-                        stateList2[indexState].State = "Active";
+                            int indexState = 0;
+                            for (int i = 0; i < stateList2.Count; i++)
+                            {
+                                if (stateList2[i].Name == workList[index].name)
+                                {
+                                    indexState = i;
+                                    break;
+                                }
+                            }
 
-                        string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
-                        File.WriteAllText(Etat.filePath, strResultJsonState2);
+                            stateList2[indexState].State = "Active";
 
-                        // differential backup
-                        DifferentialBackup SD = new DifferentialBackup();
-                        SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
+                            string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
+                            File.WriteAllText(Etat.filePath, strResultJsonState2);
+                            // complete backup
+                            FullBackup SD = new FullBackup();
+                            SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
+
+
+                        }
 
                     }
                     else
-                    {
-                        var jsonDataState2 = File.ReadAllText(Etat.filePath);
-                        var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+                    {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
-                        int indexState = 0;
-                        for (int i = 0; i < stateList2.Count; i++)
-                        {
-                            if (stateList2[i].Name == workList[index].name)
-                            {
-                                indexState = i;
-                                break;
-                            }
-                        }
-
-                        stateList2[indexState].State = "Active";
-
-                        string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
-                        File.WriteAllText(Etat.filePath, strResultJsonState2);
-
-                        // complete backup
-                        FullBackup SD = new FullBackup();
-                        SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
-
+                        MessageBox.Show($"{lang.printNoSaveWorkFound} {inputUtilisateur} \n");
                     }
                 }
-
                 else
                 {
-                    MessageBox.Show($"{lang.printNoSaveWorkFound} {inputUtilisateur} \n");
+                    //mettre en pause puis lancer quand le logiciel métier est fermé
+                    MessageBox.Show(lang.printImpossibleToRunBuissnessSoftwareRunning);
                 }
-            }
-
-            else
-            {
-                //à faire : mettre en pause puis lancer quand le logiciel métier est fermé
-                MessageBox.Show(lang.printImpossibleToRunBuissnessSoftwareRunning);
+                //end of the critical section
             }
         }
 
@@ -195,7 +200,7 @@ namespace test2
             Thread threadA = new Thread(nothing);
             Thread threadB;
             //run threads
-            for (int i = 1; i <= saveWorkNumber.Count / 2; i++)
+            for (int i = 1; i < saveWorkNumber.Count / 2; i++)
             {
                 threadA = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i])));
                 threadA.Start();
@@ -204,15 +209,7 @@ namespace test2
                     threadB.Start();
                 }
             }
-            Thread.Sleep(100000);
-            /*
-            for (int i = 2; i < q + 1; i += 2)
-            {
-                saveWorkNumber.Add(i);
-                MessageBox.Show($"saveWorkNumberB :{Convert.ToString(i)}");
-            }
-            */
-            MessageBox.Show(Convert.ToString(saveWorkNumber));
+            Thread.Sleep(100);
 
             /*
             Thread threadA, threadB;

@@ -558,5 +558,45 @@
     "time": "16/12/2021 18:54:14",
     "timetocrypt": "00:00:00.07",
     "extensions": "jpg"
+  },
+  {
+    "Name": "Full",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "8010",
+    "FileTransferTime": "00:00:00.10",
+    "time": "16/12/2021 21:58:39",
+    "timetocrypt": "00:00:00.10",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "thirdTest",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.03",
+    "time": "16/12/2021 21:58:39",
+    "timetocrypt": "00:00:00.03",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "firstTest",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 21:59:40",
+    "timetocrypt": "00:00:00.04",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "secondTest",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.05",
+    "time": "16/12/2021 22:00:18",
+    "timetocrypt": "00:00:00.05",
+    "extensions": "jpg"
   }
 ]
