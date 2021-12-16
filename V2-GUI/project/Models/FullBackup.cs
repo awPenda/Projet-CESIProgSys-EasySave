@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Windows;
 
 namespace test2
 {
@@ -35,19 +36,20 @@ namespace test2
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
             var i = 0;
 
-            /*
-             var json = File.ReadAllText(Settings.filePath);
+            
+           /*  var json = File.ReadAllText(Settings.filePath);
             var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
             string[] extensions = new string[] { List[0].extensionsAccepted };
-            extensions = extensions[0].Split(',', ' ');
-            TimeSpan TimeToCrypt = TimeSpan.Zero;
+            extensions = extensions[0].Split(',', ' '); */
+            TimeSpan TimeToCrypt = TimeSpan.Zero; 
 
             foreach (var file in files)
             {
-                if (extensions.Contains(file.Extension))
+                if ((file.Extension == ".txt"))
                 {
+                    
                   var p = new Process();
-                  p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft.exe";
+                  p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft\CryptoSoft.exe";
                   p.StartInfo.Arguments = $"{file.FullName} {file.FullName.Replace(sourcePATH, destPATH)}";
                   Stopwatch timer = new Stopwatch();
                     timer.Start();
@@ -55,14 +57,7 @@ namespace test2
                     timer.Stop();
                     TimeToCrypt += stopWatch.Elapsed;
 
-                    var jsonState = File.ReadAllText(Etat.filePath); //Read the JSON file
-                    var stateListCrypt = JsonConvert.DeserializeObject<List<Etat>>(jsonState) ?? new List<Etat>(); //convert a string into an object for JSON
-
-                    stateListCrypt[getStateIndex].TimeToCrypt = TimeToCrypt.ToString();
-
-                    string ResultJsonState = JsonConvert.SerializeObject(stateListCrypt, Formatting.Indented);  //convert an object into a string for JSON
-                    File.WriteAllText(Etat.filePath, ResultJsonState);
-
+                   
                 }
                 else 
                 { 
@@ -81,7 +76,7 @@ namespace test2
                 File.WriteAllText(Etat.filePath, strResultJsonState);
                 // Switch the language of the outpoot according to the choice of the user when he started the program
             }
-            */
+            
             foreach (var file in files)
             {
                 file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
@@ -133,8 +128,8 @@ namespace test2
                 FileSize = stateList2[getStateIndex].TotalFilesSize,
                 FileTransferTime = elapsedTime,
                 time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                timetocrypt = elapsedTime,
-                extensions = "jpg",
+                timetocrypt = TimeToCrypt.ToString()
+                
             });
 
             string strResultJsonState4 = JsonConvert.SerializeObject(stateList4, Formatting.Indented);  //convert an object into a string for JSON

@@ -102,21 +102,15 @@ namespace test2
 
 
 
-                try
-                {
+               
                     exeWork.ExecuteWork(tab2TextBoxNumber.Text);
                     tab1SaveWork_Loaded(sender, e);
                     MessageBox.Show(tab2TextBoxNumber.Text + lang.printHasBeenExecuted);
 
-                }
-                catch
-                {
+                
 
 
-                    MessageBox.Show(lang.printError);
-
-
-                }
+                
             }
             else
             {
