@@ -6,9 +6,9 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\MSI GAMER\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\MSI GAMER\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\ameli\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ameli\\.nuget\\packages",
+      "D:\\Microsoft\\Xamarin\\NuGet"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

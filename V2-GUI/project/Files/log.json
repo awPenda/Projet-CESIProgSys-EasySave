@@ -428,5 +428,25 @@
     "time": "10/12/2021 07:12:19",
     "timetocrypt": "00:00:00.01",
     "extensions": "jpg"
+  },
+  {
+    "Name": "tefdfg fg",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.08",
+    "time": "16/12/2021 14:38:08",
+    "timetocrypt": "00:00:00.08",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "testcrypt",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.06",
+    "time": "16/12/2021 14:47:20",
+    "timetocrypt": "00:00:00.06",
+    "extensions": "jpg"
   }
 ]

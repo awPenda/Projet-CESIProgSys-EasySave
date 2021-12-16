@@ -13,6 +13,7 @@ namespace test2
     {
         ChangeLang lang = new ChangeLang();
 
+
         // a method that will allow to create a backupwork
         public void addWork(long filesize, int countfile, string theName, string theRepS, string theRepC, string theType)
         {
@@ -35,80 +36,73 @@ namespace test2
                     nameExist = false;
                 }
             }
-
             if (!nameExist)
             {
-               
-                    workList.Add(new Work() //parameter that the JSON file will contains
-                    {
-                        name = theName,
-                        repS = theRepS,
-                        repC = theRepC,
-                        type = theType,
-                    });
+                //parameter that the JSON file will contains
+                workList.Add(new Work(){ 
+                    name = theName,
+                    repS = theRepS,
+                    repC = theRepC,
+                    type = theType,
+                });
+                //parameter that the JSON file will contains
+                string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented);
+                // write in the JSON file
+                File.WriteAllText(Work.filePath, strResultJsonWork);
+                //Read the JSON file
+                var jsonDataState = File.ReadAllText(Etat.filePath);
+                //convert a string into an object for JSON
+                var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState) ?? new List<Etat>();
 
+                //parameter that the JSON file will contains
+                stateList.Add(new Etat(){
+                    Name = theName,
+                    SourceFilePath = theRepS,
+                    TargetFilePath = theRepC,
+                    Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                    State = "INACTIVE",
+                    TotalFilesToCopy = countfile.ToString(),
+                    TotalFilesSize = filesize.ToString(),
+                    NbFilesLeftToDo = "0",
+                    Progression = "0%"
+                });
 
-                    string strResultJsonWork = JsonConvert.SerializeObject(workList, Formatting.Indented);  //convert an object into a string for JSON
-                    File.WriteAllText(Work.filePath, strResultJsonWork); // write in the JSON file
+                //convert an object into a string for JSON
+                string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);
+                // write in the JSON file
+                File.WriteAllText(Etat.filePath, strResultJsonState); 
 
-                    var jsonDataState = File.ReadAllText(Etat.filePath); //Read the JSON file
-                    var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState) ?? new List<Etat>(); //convert a string into an object for JSON
-
-
-                    stateList.Add(new Etat() //parameter that the JSON file will contains
-                    {
-                        Name = theName,
-                        SourceFilePath = theRepS,
-                        TargetFilePath = theRepC,
-                        Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                        State = "INACTIVE",
-                        TotalFilesToCopy = countfile.ToString(),
-                        TotalFilesSize = filesize.ToString(),
-                        NbFilesLeftToDo = "0",
-                        Progression = "0%"
-                    });
-
-                    string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented); //convert an object into a string for JSON
-                    File.WriteAllText(Etat.filePath, strResultJsonState); // write in the JSON file
-
-                    // Switch the language of the outpoot according to the choice of the user when he started the program
-                   
-
-                        MessageBox.Show(lang.printSaveWorkAdded);
-
-                    
-                   
-
-                      
-
-                    
-              
+                MessageBox.Show(lang.printSaveWorkAdded);
             }
+
             else
-            {   // Switch the language of the outpoot according to the choice of the user when he started the program
-
-
+            {   
                 MessageBox.Show(lang.printSaveWorkAlreadyExist);
-
-                
-              
             }
         }
-        public List<Work> displayWorks() // a method that will allow to display all our backupwork
+
+        // a method that will allow to display all our backupwork
+        public List<Work> displayWorks() 
         {
-            var jsonData = File.ReadAllText(Work.filePath); //Read the JSON file
+            //Read the JSON file
+            var jsonData = File.ReadAllText(Work.filePath);
             var stateList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
 
             return stateList;
         }
-        public void ExecuteWork(string inputUtilisateur) // a method that will allow to execute a backupwork created
+
+        // a method that will allow to execute a backupwork created
+        public void ExecuteWork(string inputUtilisateur) 
         {
             if (Process.GetProcessesByName("Calculator").Length == 0)
             {
-                var jsonData = File.ReadAllText(Work.filePath); //Read the JSON file
-                var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>(); //convert a string into an object for JSON
+                //Read the JSON file
+                var jsonData = File.ReadAllText(Work.filePath);
+                //convert a string into an object for JSON
+                var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
 
-                if (workList.Count >= Convert.ToInt32(inputUtilisateur)) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
+                //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
+                if (workList.Count >= Convert.ToInt32(inputUtilisateur))
                 {
                     int index = Convert.ToInt32(inputUtilisateur) - 1;
                     string sourceDir = workList.ElementAt(index).repS;
@@ -136,6 +130,7 @@ namespace test2
 
                         string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                         File.WriteAllText(Etat.filePath, strResultJsonState2);
+
                         // differential backup
                         DifferentialBackup SD = new DifferentialBackup();
                         SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
@@ -160,30 +155,28 @@ namespace test2
 
                         string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                         File.WriteAllText(Etat.filePath, strResultJsonState2);
+
                         // complete backup
                         FullBackup SD = new FullBackup();
                         SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);
 
-
                     }
-
                 }
+
                 else
-                {   // Switch the language of the outpoot according to the choice of the user when he started the program
-
-                    
+                {
                     MessageBox.Show($"{lang.printNoSaveWorkFound} {inputUtilisateur} \n");
-
-
                 }
             }
+
             else
             {
-                //mettre en pause puis lancer quand le logiciel métier est fermé
+                //à faire : mettre en pause puis lancer quand le logiciel métier est fermé
                 MessageBox.Show(lang.printImpossibleToRunBuissnessSoftwareRunning);
             }
-
         }
+
+
         public void ExecuteAllWork()
         {
             var jsonData = File.ReadAllText(Work.filePath);
@@ -193,15 +186,11 @@ namespace test2
            for (int j =0;j<q; j++ ) 
             {
                 ExecuteWork("1");
-   
-           
-            }
-
-
-            
-        
+            }        
         }
-        public long GetFileSizeSumFromDirectory(string searchDirectory) //a method that allow to calculate the size of a directory (subdirrectory included)
+
+        //a method that allow to calculate the size of a directory (subdirrectory included)
+        public long GetFileSizeSumFromDirectory(string searchDirectory)
         {
             var files = Directory.EnumerateFiles(searchDirectory);
 

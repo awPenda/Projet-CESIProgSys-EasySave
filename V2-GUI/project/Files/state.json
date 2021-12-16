@@ -515,5 +515,27 @@
     "TotalFilesSize": "0",
     "NbFilesLeftToDo": "0",
     "Progression": "0%"
+  },
+  {
+    "Name": "tefdfg fg",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 14:38:08",
+    "State": "END",
+    "TotalFilesToCopy": "6",
+    "TotalFilesSize": "0",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "testcrypt",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 14:47:20",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
   }
 ]
