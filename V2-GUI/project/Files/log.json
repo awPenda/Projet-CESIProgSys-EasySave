@@ -61,5 +61,14 @@
     "FileTransferTime": "00:00:00.04",
     "time": "16/12/2021 22:54:09",
     "TimeToCrypt": "00:00:00.0695536"
+  },
+  {
+    "Name": "adel",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "11",
+    "FileTransferTime": "00:00:00.90",
+    "time": "16/12/2021 23:16:27",
+    "TimeToCrypt": "00:00:00.8993433"
   }
 ]

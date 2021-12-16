@@ -46,5 +46,17 @@
     "NbFilesLeftToDo": "0",
     "Progression": "100%",
     "TimeToCrypt": "00:00:00.0695536"
+  },
+  {
+    "Name": "adel",
+    "SourceFilePath": "C:\\Source",
+    "TargetFilePath": "C:\\Destination",
+    "Time": "16/12/2021 23:16:27",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.8993433"
   }
 ]
