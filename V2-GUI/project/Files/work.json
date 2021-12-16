@@ -1,26 +1,56 @@
 [
   {
-    "name": "aww",
-    "repS": "C:\\Users\\MSI GAMER\\Documents\\VPProjects",
-    "repC": "C:\\Users\\MSI GAMER\\Documents",
+    "name": "First",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target1",
     "type": "Full"
   },
   {
-    "name": "AWWWI",
-    "repS": "C:\\Users\\MSI GAMER\\Pictures",
-    "repC": "D:\\",
+    "name": "Second",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target2",
     "type": "Full"
   },
   {
-    "name": "test123456",
-    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
-    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "name": "Third",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target3",
     "type": "Full"
   },
   {
-    "name": "tresdgffg",
-    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
-    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "name": "First",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target1",
+    "type": "Full"
+  },
+  {
+    "name": "Second",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target2",
+    "type": "Full"
+  },
+  {
+    "name": "Third",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target3",
+    "type": "Full"
+  },
+  {
+    "name": "First",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target1",
+    "type": "Full"
+  },
+  {
+    "name": "Second",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target2",
+    "type": "Full"
+  },
+  {
+    "name": "Third",
+    "repS": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "repC": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target3",
     "type": "Full"
   }
 ]

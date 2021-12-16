@@ -448,5 +448,115 @@
     "time": "16/12/2021 14:47:20",
     "timetocrypt": "00:00:00.06",
     "extensions": "jpg"
+  },
+  {
+    "Name": "FirstTest",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target1",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:30:53",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "thirdTest",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target3",
+    "FileSize": "2670",
+    "FileTransferTime": "00:00:00.05",
+    "time": "16/12/2021 18:30:54",
+    "timetocrypt": "00:00:00.05",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "FullSave",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "8010",
+    "FileTransferTime": "00:00:00.15",
+    "time": "16/12/2021 18:30:55",
+    "timetocrypt": "00:00:00.15",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.08",
+    "time": "16/12/2021 18:41:21",
+    "timetocrypt": "00:00:00.08",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:41:24",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:43:50",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.06",
+    "time": "16/12/2021 18:43:52",
+    "timetocrypt": "00:00:00.06",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:48:26",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:48:27",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.06",
+    "time": "16/12/2021 18:52:17",
+    "timetocrypt": "00:00:00.06",
+    "extensions": "jpg"
+  },
+  {
+    "Name": "test1",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "40716",
+    "FileTransferTime": "00:00:00.07",
+    "time": "16/12/2021 18:54:14",
+    "timetocrypt": "00:00:00.07",
+    "extensions": "jpg"
   }
 ]

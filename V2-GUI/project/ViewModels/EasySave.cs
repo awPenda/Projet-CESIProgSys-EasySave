@@ -6,6 +6,7 @@ using System.Text;
 using System.Linq;
 using System.Windows;
 using System.Diagnostics;
+using System.Threading;
 
 namespace test2
 {
@@ -176,17 +177,73 @@ namespace test2
             }
         }
 
+        //public delegate void ParameterizedThreadStart(object? obj);
 
-        public void ExecuteAllWork()
+        public void ExecuteAllWork() //ExecuteAllWorkThread
         {
-            var jsonData = File.ReadAllText(Work.filePath);
-            var workList = JsonConvert.DeserializeObject<List<Work>>(jsonData) ?? new List<Work>();
+            //get json data
+            var workList = JsonConvert.DeserializeObject<List<Work>>(File.ReadAllText(Work.filePath)) ?? new List<Work>();
             int q = workList.Count;
-           // MessageBox.Show("haha" +Convert.ToString( workList.Count) + "hahha");
-           for (int j =0;j<q; j++ ) 
+            //numbers of the save work we want to run
+            List<int> saveWorkNumber = new List<int>();
+            for (int i = 1; i < q + 1; i+=2)
             {
-                ExecuteWork("1");
-            }        
+                saveWorkNumber.Add(i);
+                saveWorkNumber.Add(i+1);
+            }
+            //initialize threads
+            Thread threadA = new Thread(nothing);
+            Thread threadB;
+            //run threads
+            for (int i = 1; i <= saveWorkNumber.Count / 2; i++)
+            {
+                threadA = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i])));
+                threadA.Start();
+                if (i < q) {
+                    threadB = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i + 1])));
+                    threadB.Start();
+                }
+            }
+            Thread.Sleep(100000);
+            /*
+            for (int i = 2; i < q + 1; i += 2)
+            {
+                saveWorkNumber.Add(i);
+                MessageBox.Show($"saveWorkNumberB :{Convert.ToString(i)}");
+            }
+            */
+            MessageBox.Show(Convert.ToString(saveWorkNumber));
+
+            /*
+            Thread threadA, threadB;
+            threadA = new Thread(() => ExecuteWork(Convert.ToString(i)));
+            threadB = new Thread(() => ExecuteWork(Convert.ToString(i + 1)));
+            */
+
+
+
+            /*
+            for (int i=1 ; i < q+1 ; i++ ) 
+            {
+                EasySave easySave = new EasySave();
+
+                //Thread threadA = new Thread(easySave.ExecuteWork); //Creating the Thread    
+                threadA = new Thread(() => ExecuteWork(Convert.ToString(i))); //Creating the Thread  
+                //threadB = new Thread(() => ExecuteWork(Convert.ToString(i + 1)));
+                threadA.Start();
+                //threadB.Start();
+                //Thread.Sleep(100);
+            }
+            */
+
+            //threadA.Start();
+            //MessageBox.Show($"Execute : {i}");
+            //threadB.Start();
+            //MessageBox.Show($"Execute : {i + 1}");
+        }
+        public static void nothing()
+        {
+
         }
 
         //a method that allow to calculate the size of a directory (subdirrectory included)

@@ -3,8 +3,8 @@
     "Name": "test1",
     "SourceFilePath": "C:\\Source",
     "TargetFilePath": "C:\\Destination",
-    "Time": "06/12/2021 03:22:45",
-    "State": "END",
+    "Time": "16/12/2021 18:54:14",
+    "State": "Active",
     "TotalFilesToCopy": "1",
     "TotalFilesSize": "40716",
     "NbFilesLeftToDo": "0",
@@ -535,6 +535,50 @@
     "State": "END",
     "TotalFilesToCopy": "3",
     "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "FirstTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target1",
+    "Time": "16/12/2021 18:30:53",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "SecondTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target2",
+    "Time": "16/12/2021 17:50:41",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "thirdTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\target3",
+    "Time": "16/12/2021 18:30:54",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "FullSave",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 18:30:55",
+    "State": "END",
+    "TotalFilesToCopy": "9",
+    "TotalFilesSize": "8010",
     "NbFilesLeftToDo": "0",
     "Progression": "100%"
   }

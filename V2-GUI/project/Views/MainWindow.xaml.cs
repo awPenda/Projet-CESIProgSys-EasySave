@@ -30,9 +30,9 @@ namespace test2
 
 
         //tab1 add save work
+
         private void tab1ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-
             if (tab1TextBoxName.Text != "" && tab1TextBoxSourcePath.Text != "" && tab1TextBoxTargetPath.Text != "" && tab1SelectType.Text != "")
             {
                 test2.EasySave addWork = new test2.EasySave();
@@ -52,10 +52,7 @@ namespace test2
                 }
                 catch
                 {
-
-
                     MessageBox.Show(lang.printError);
-
 
                     tab1TextBoxName.Text = "";
                     tab1TextBoxSourcePath.Text = "";
@@ -65,17 +62,13 @@ namespace test2
             }
             else
             {
-
-
-
                 MessageBox.Show(lang.printFillOut);
-
             }
-
         }
 
 
         //tab2 run save work
+
         private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
         {
             test2.EasySave exeseqWork = new test2.EasySave();
@@ -99,9 +92,6 @@ namespace test2
             if (tab2TextBoxNumber.Text != "")
             {
                 test2.EasySave exeWork = new test2.EasySave();
-
-
-
                 try
                 {
                     exeWork.ExecuteWork(tab2TextBoxNumber.Text);
@@ -111,20 +101,12 @@ namespace test2
                 }
                 catch
                 {
-
-
                     MessageBox.Show(lang.printError);
-
-
                 }
             }
             else
             {
-
-
-
                 MessageBox.Show(lang.printFillOut);
-
             }
         }
 
@@ -144,7 +126,6 @@ namespace test2
         {
 
             Button clickedButton = (Button)sender;
-            //clickedButton.Content = "...button clicked...";
             clickedButton.IsEnabled = false;
             tab3ButtonEnglish.IsEnabled = true;
 
@@ -179,10 +160,10 @@ namespace test2
 
             MessageBox.Show(lang.changeMessageBoxLang("french"));
         }
+
         private void tab3ButtonEnglish_Click(object sender, RoutedEventArgs e)
         {
             Button clickedButton = (Button)sender;
-            //clickedButton.Content = "...button clicked...";
             clickedButton.IsEnabled = false;
             tab3ButtonFrench.IsEnabled = true;
 
@@ -254,10 +235,8 @@ namespace test2
                 lang.printEmptySourceDir
             };
             */
-
-            
-            
         }
+
         private void tab3ButtonUserGuide_Click(object sender, RoutedEventArgs e)
         {
             OpenProcess.OpenProcessFunction("notepad.exe", @"..\..\..\Files\UserGuide.txt");
