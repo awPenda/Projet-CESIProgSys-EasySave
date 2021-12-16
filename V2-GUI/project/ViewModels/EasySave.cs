@@ -160,6 +160,7 @@ namespace test2
 
                         string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
                         File.WriteAllText(Etat.filePath, strResultJsonState2);
+
                         // complete backup
                         FullBackup SD = new FullBackup();
                         SD.Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, name);

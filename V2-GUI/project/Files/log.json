@@ -1,42 +1,65 @@
 [
   {
-    "Name": "adel",
+    "Name": "dfsdfsf",
     "FileSource": "C:\\Source",
     "FileTarget": "C:\\Destination",
-    "FileSize": "86",
-    "FileTransferTime": "00:00:00.06",
-    "time": "16/12/2021 18:11:45",
-    "timetocrypt": "00:00:00.06",
-    "extensions": "jpg"
-  },
-  {
-    "Name": "rasim",
-    "FileSource": "C:\\Source",
-    "FileTarget": "C:\\Destination",
-    "FileSize": "86",
-    "FileTransferTime": "00:00:00.03",
-    "time": "16/12/2021 18:12:37",
-    "timetocrypt": "00:00:00.03",
-    "extensions": "jpg"
-  },
-  {
-    "Name": "poaDQ",
-    "FileSource": "C:\\Source",
-    "FileTarget": "C:\\Destination",
-    "FileSize": "86",
+    "FileSize": "38127",
     "FileTransferTime": "00:00:00.04",
-    "time": "16/12/2021 18:17:25",
-    "timetocrypt": "00:00:00.04",
-    "extensions": "jpg"
+    "time": "16/12/2021 22:39:06",
+    "TimeToCrypt": "00:00:00.0308560"
   },
   {
-    "Name": "sfsfsfsf",
+    "Name": "uhuj",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.24",
+    "time": "16/12/2021 22:48:21",
+    "TimeToCrypt": "00:00:00.0266475"
+  },
+  {
+    "Name": "uhuj",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.24",
+    "time": "16/12/2021 22:48:24",
+    "TimeToCrypt": "00:00:00.2670532"
+  },
+  {
+    "Name": "uhu",
     "FileSource": "C:\\Source",
     "FileTarget": "C:\\Destination",
-    "FileSize": "86",
-    "FileTransferTime": "00:00:02.51",
-    "time": "16/12/2021 18:21:42",
-    "timetocrypt": "00:00:02.51",
-    "extensions": "jpg"
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.03",
+    "time": "16/12/2021 22:49:24",
+    "TimeToCrypt": "00:00:00.0271381"
+  },
+  {
+    "Name": "uhu",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.03",
+    "time": "16/12/2021 22:49:24",
+    "TimeToCrypt": "00:00:00.0651106"
+  },
+  {
+    "Name": "fkqisfjisksf",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 22:54:08",
+    "TimeToCrypt": "00:00:00.0285399"
+  },
+  {
+    "Name": "fkqisfjisksf",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 22:54:09",
+    "TimeToCrypt": "00:00:00.0695536"
   }
 ]

@@ -1,46 +1,50 @@
 [
   {
-    "Name": "adel",
+    "Name": "dfsdfsf",
     "SourceFilePath": "C:\\Source",
     "TargetFilePath": "C:\\Destination",
-    "Time": "16/12/2021 18:11:45",
-    "State": "END",
-    "TotalFilesToCopy": "1",
-    "TotalFilesSize": "86",
+    "Time": "16/12/2021 22:39:06",
+    "State": "Active",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "38127",
     "NbFilesLeftToDo": "0",
-    "Progression": "100%"
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0737273"
   },
   {
-    "Name": "rasim",
-    "SourceFilePath": "C:\\Source",
-    "TargetFilePath": "C:\\Destination",
-    "Time": "16/12/2021 18:12:37",
-    "State": "END",
-    "TotalFilesToCopy": "1",
-    "TotalFilesSize": "86",
+    "Name": "uhuj",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "16/12/2021 22:48:21",
+    "State": "Active",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "38127",
     "NbFilesLeftToDo": "0",
-    "Progression": "100%"
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.2670532"
   },
   {
-    "Name": "poaDQ",
+    "Name": "uhu",
     "SourceFilePath": "C:\\Source",
     "TargetFilePath": "C:\\Destination",
-    "Time": "16/12/2021 18:17:25",
-    "State": "END",
-    "TotalFilesToCopy": "1",
-    "TotalFilesSize": "86",
-    "NbFilesLeftToDo": "-1",
-    "Progression": "200%"
+    "Time": "16/12/2021 22:49:24",
+    "State": "Active",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "38127",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0651106"
   },
   {
-    "Name": "sfsfsfsf",
+    "Name": "fkqisfjisksf",
     "SourceFilePath": "C:\\Source",
     "TargetFilePath": "C:\\Destination",
-    "Time": "16/12/2021 18:21:42",
-    "State": "END",
-    "TotalFilesToCopy": "1",
-    "TotalFilesSize": "86",
-    "NbFilesLeftToDo": "-1",
-    "Progression": "200%"
+    "Time": "16/12/2021 22:54:08",
+    "State": "Active",
+    "TotalFilesToCopy": "2",
+    "TotalFilesSize": "38127",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0695536"
   }
 ]

@@ -7,14 +7,26 @@ using System.Text;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Windows;
+using System.Threading;
 
 namespace test2
 {
-    class FullBackup : IBackup
+    public class FullBackup : IBackup
     {
+
+
+        public string Name;
+        private bool condition_pause = true;
+        public bool Condition_pause { get => condition_pause; set => condition_pause = value; }
+        public bool SetStop { get => stop; set => stop = value; }
+        private bool stop = false;
+
+
+
         // a method that will be used for the full backup
         public void Sauvegarde(string sourcePATH, string destPATH, bool copyDirs, int getStateIndex, long fileCount, int getIndex, string getName)
         {
+            Name = getName;
             //Initialize a timer which determine the backup time
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -34,112 +46,215 @@ namespace test2
             }
 
             FileInfo[] files = copyDirs ? dir.GetFiles("*", SearchOption.AllDirectories) : dir.GetFiles();
+            List<FileInfo> files2 = new List<FileInfo>(files);
+            var jsonn = File.ReadAllText(Settings.filePath);
+            var Listt = JsonConvert.DeserializeObject<List<Settings>>(jsonn) ?? new List<Settings>();
+            string[] extensionss = new string[] { Listt[0].extensionsAccepted };
+            extensionss = extensionss[0].Split(',', ' ');
+            //for (int j = 0; j < files2.Count; j++)
+            // {
+            //  if (extensionss.Contains(files2[j].Extension))
+            // {
+            //    FileInfo tompon = files2[j];
+            //   files2.RemoveAt(j);
+            //  files2.Insert(0, tompon);
+            // }
+            //MessageBox.Show(files[i].Extension);
+
+            //}
+            //files = files2.ToArray();
             var i = 0;
 
-            
-           /*  var json = File.ReadAllText(Settings.filePath);
+            var json = File.ReadAllText(Settings.filePath);
             var List = JsonConvert.DeserializeObject<List<Settings>>(json) ?? new List<Settings>();
             string[] extensions = new string[] { List[0].extensionsAccepted };
-            extensions = extensions[0].Split(',', ' '); */
-            TimeSpan TimeToCrypt = TimeSpan.Zero; 
+            extensions = extensions[0].Split(',', ' ');
+            TimeSpan TimeToCrypt = TimeSpan.Zero;
 
             foreach (var file in files)
             {
-                if ((file.Extension == ".txt"))
+                while (!Condition_pause) { }
+                if (stop) break;
+
+                if (extensions.Contains(file.Extension))
                 {
-                    
-                  var p = new Process();
-                  p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft\CryptoSoft.exe";
-                  p.StartInfo.Arguments = $"{file.FullName} {file.FullName.Replace(sourcePATH, destPATH)}";
-                  Stopwatch timer = new Stopwatch();
+                    var p = new Process();
+                    p.StartInfo.FileName = @"..\..\..\CryptoSoft\CryptoSoft\CryptoSoft.exe";
+                    p.StartInfo.Arguments = $"{file.FullName} {file.FullName.Replace(sourcePATH, destPATH)}";
+                    Stopwatch timer = new Stopwatch();
                     timer.Start();
-                  p.Start();
+                    p.Start();
                     timer.Stop();
                     TimeToCrypt += stopWatch.Elapsed;
 
-                   
+                    lock (Locker.Read_State)
+                    {
+                        var jsonState = File.ReadAllText(Etat.filePath); //Read the JSON file
+                        var stateListCrypt = JsonConvert.DeserializeObject<List<Etat>>(jsonState) ?? new List<Etat>(); //convert a string into an object for JSON
+
+                        stateListCrypt[getStateIndex].TimeToCrypt = TimeToCrypt.ToString();
+
+                        string ResultJsonState = JsonConvert.SerializeObject(stateListCrypt, Formatting.Indented);  //convert an object into a string for JSON
+
+
+
+                        //mettre un lock
+
+                        File.WriteAllText(Etat.filePath, ResultJsonState);
+
+                    }
+
+
                 }
-                else 
-                { 
-                file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
+                else
+                {
+
+                    file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
                 }
                 i++;
-                var filesLeftToDo = Directory.GetFiles(sourcePATH, "*", SearchOption.AllDirectories).Length - i;
-                string progress = Convert.ToString((100 - (filesLeftToDo * 100) / fileCount)) + "%";
-                var jsonData = File.ReadAllText(Etat.filePath); //Read the JSON file
-                var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>(); //convert a string into an object for JSON
+                lock (Locker.Read_State)
+                {
+                    ///////////////////////////////////////
 
-                stateList[getStateIndex].NbFilesLeftToDo = filesLeftToDo.ToString();
-                stateList[getStateIndex].Progression = progress;
 
-                string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);  //convert an object into a string for JSON
-                File.WriteAllText(Etat.filePath, strResultJsonState);
-                // Switch the language of the outpoot according to the choice of the user when he started the program
+                    var filesLeftToDo = Directory.GetFiles(sourcePATH, "*", SearchOption.AllDirectories).Length - i;
+                    string progress = Convert.ToString((100 - (filesLeftToDo * 100) / fileCount)) + "%";
+                    List<Etat> stateList;
+
+
+
+                    var jsonData = File.ReadAllText(Etat.filePath); //Read the JSON file
+                    stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>(); //convert a string into an object for JSON
+
+
+                    stateList[getStateIndex].NbFilesLeftToDo = filesLeftToDo.ToString();
+                    stateList[getStateIndex].Progression = progress;
+
+                    string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);  //convert an object into a string for JSON
+
+
+
+
+
+                    //mettre un lock
+
+                    File.WriteAllText(Etat.filePath, strResultJsonState);
+
+                }
+
+
+
+
+
+                List<Etat> stateList2;
+                string strResultJsonState2 = "";
+                lock (Locker.Read_State)
+                {
+                    var jsonDataState2 = File.ReadAllText(Etat.filePath); //Read the JSON file
+                    stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>(); //convert a string into an object for JSON
+
+
+
+
+
+                    stateList2[getStateIndex].Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+
+
+                    strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);  //convert an object into a string for JSON
+
+
+
+
+
+                    //mettre un lock
+
+
+                    File.WriteAllText(Etat.filePath, strResultJsonState2);
+
+                }
+
+
+
+
+
+
+                lock (Locker.Read_State)
+                {
+                    var jsonDataState3 = File.ReadAllText(Work.filePath); //Read the JSON file
+                    var stateList3 = JsonConvert.DeserializeObject<List<Work>>(jsonDataState3) ?? new List<Work>(); //convert a string into an object for JSON
+
+                    try {
+                        stateList3.Remove(stateList3[getIndex]);
+                    }
+                     catch
+                    {
+                        //MessageBox.Show(getIndex.ToString());
+                    }
+                    
+
+                    string strResultJsonState3 = JsonConvert.SerializeObject(stateList3, Formatting.Indented);  //convert an object into a string for JSON
+
+
+
+
+
+                    //mettre un lock   
+
+
+
+                    File.WriteAllText(Work.filePath, strResultJsonState3);
+
+                }
+
+
+
+
+
+
+                stopWatch.Stop();
+                TimeSpan ts = stopWatch.Elapsed;
+                string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
+                Console.WriteLine("RunTime " + elapsedTime);
+
+                List<Log> stateList4;
+                lock (Locker.Read_State)
+                {
+                    var jsonDataState4 = File.ReadAllText(Log.filePath); //Read the JSON file
+                    stateList4 = JsonConvert.DeserializeObject<List<Log>>(jsonDataState4) ?? new List<Log>(); //convert a string into an object for JSON
+
+                    stateList4.Add(new Log()
+                    {
+                        Name = stateList2[getStateIndex].Name,
+                        FileSource = stateList2[getStateIndex].SourceFilePath,
+                        FileTarget = stateList2[getStateIndex].TargetFilePath,
+                        FileSize = stateList2[getStateIndex].TotalFilesSize,
+                        FileTransferTime = elapsedTime,
+                        time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
+                        TimeToCrypt = TimeToCrypt.ToString(),
+                        
+                    });
+
+                    string strResultJsonState4 = JsonConvert.SerializeObject(stateList4, Formatting.Indented);  //convert an object into a string for JSON
+
+
+
+
+
+
+                    //mettre un lock   
+
+                    File.WriteAllText(Log.filePath, strResultJsonState4);
+
+
+                }
             }
-            
-            foreach (var file in files)
-            {
-                file.CopyTo(file.FullName.Replace(sourcePATH, destPATH), true); //Copies an existing file to a new file.
-                i++;
-                var filesLeftToDo = Directory.GetFiles(sourcePATH, "*", SearchOption.AllDirectories).Length - i;
-                string progress = Convert.ToString((100 - (filesLeftToDo * 100) / fileCount)) + "%";
-                var jsonData = File.ReadAllText(Etat.filePath); //Read the JSON file
-                var stateList = JsonConvert.DeserializeObject<List<Etat>>(jsonData) ?? new List<Etat>(); //convert a string into an object for JSON
-
-                stateList[getStateIndex].NbFilesLeftToDo = filesLeftToDo.ToString();
-                stateList[getStateIndex].Progression = progress;
-
-                string strResultJsonState = JsonConvert.SerializeObject(stateList, Formatting.Indented);  //convert an object into a string for JSON
-                File.WriteAllText(Etat.filePath, strResultJsonState);
-                // Switch the language of the outpoot according to the choice of the user when he started the program
-               
-
-            }
-            var jsonDataState2 = File.ReadAllText(Etat.filePath); //Read the JSON file
-            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>(); //convert a string into an object for JSON
-
-            stateList2[getStateIndex].Time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-            stateList2[getStateIndex].State = "END";
-
-            string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);  //convert an object into a string for JSON
-            File.WriteAllText(Etat.filePath, strResultJsonState2);
-
-            var jsonDataState3 = File.ReadAllText(Work.filePath); //Read the JSON file
-            var stateList3 = JsonConvert.DeserializeObject<List<Work>>(jsonDataState3) ?? new List<Work>(); //convert a string into an object for JSON
-
-            stateList3.Remove(stateList3[getIndex]);
-
-            string strResultJsonState3 = JsonConvert.SerializeObject(stateList3, Formatting.Indented);  //convert an object into a string for JSON
-            File.WriteAllText(Work.filePath, strResultJsonState3);
-
-            stopWatch.Stop();
-            TimeSpan ts = stopWatch.Elapsed;
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds / 10);
-            Console.WriteLine("RunTime " + elapsedTime);
-
-            var jsonDataState4 = File.ReadAllText(Log.filePath); //Read the JSON file
-            var stateList4 = JsonConvert.DeserializeObject<List<Log>>(jsonDataState4) ?? new List<Log>(); //convert a string into an object for JSON
-
-            stateList4.Add(new Log()
-            {
-                Name = stateList2[getStateIndex].Name,
-                FileSource = stateList2[getStateIndex].SourceFilePath,
-                FileTarget = stateList2[getStateIndex].TargetFilePath,
-                FileSize = stateList2[getStateIndex].TotalFilesSize,
-                FileTransferTime = elapsedTime,
-                time = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"),
-                timetocrypt = TimeToCrypt.ToString()
-                
-            });
-
-            string strResultJsonState4 = JsonConvert.SerializeObject(stateList4, Formatting.Indented);  //convert an object into a string for JSON
-            File.WriteAllText(Log.filePath, strResultJsonState4);
 
 
 
 
 
         }
+
         private void CreateDirs(string path, DirectoryInfo[] dirs)
         {
             foreach (var dir in dirs)
