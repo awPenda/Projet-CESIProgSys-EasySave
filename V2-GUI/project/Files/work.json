@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "hamiche",
+    "repS": "C:\\Source",
+    "repC": "C:\\Destination",
+    "type": "Full"
+  },
+  {
+    "name": "amineee",
+    "repS": "D:\\PfSense",
+    "repC": "C:\\Destination",
+    "type": "Full"
+  }
+]

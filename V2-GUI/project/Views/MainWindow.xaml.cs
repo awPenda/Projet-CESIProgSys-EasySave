@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Threading;
 
 namespace test2
 {
@@ -20,12 +21,24 @@ namespace test2
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
+
+
     {
+
+        EasySave execWork = EasySave.Getinstance();
+        public ManualResetEvent _resetevnt = new ManualResetEvent(true);
+        public static List<(string Nom, Thread t)> ls_thread = new List<(string Nom, Thread t)>();
+
+
+        Work list;
+
         ChangeLang lang = new ChangeLang();
 
         public MainWindow()
         {
             //InitializeComponent();
+            Server server = Server.GetInstance(); //SINGELTON
+            server.StartServer();
         }
 
 
@@ -77,7 +90,7 @@ namespace test2
 
         //tab2 run save work
         private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
-        {
+        { /*
             test2.EasySave exeseqWork = new test2.EasySave();
             try
             {
@@ -91,7 +104,7 @@ namespace test2
             catch
             {
                 MessageBox.Show(lang.printError);
-            }
+            } */
         }
 
         private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
@@ -99,18 +112,19 @@ namespace test2
             if (tab2TextBoxNumber.Text != "")
             {
                 test2.EasySave exeWork = new test2.EasySave();
+                string input = tab2TextBoxNumber.Text;
 
 
-
-               
-                    exeWork.ExecuteWork(tab2TextBoxNumber.Text);
-                    tab1SaveWork_Loaded(sender, e);
+                Thread th_Exe_Work = new Thread(() => exeWork.ExecuteWork(input));
+                    
                     MessageBox.Show(tab2TextBoxNumber.Text + lang.printHasBeenExecuted);
+                    th_Exe_Work.Name = list.name;
+                    th_Exe_Work.Start();
+                    ls_thread.Add((list.name, th_Exe_Work));
 
-                
+                tab2TextBoxNumber.Text = "";
 
-
-                
+                tab1SaveWork_Loaded(sender, e);
             }
             else
             {
@@ -121,6 +135,7 @@ namespace test2
 
             }
         }
+       
 
         private void tab2ButtonPause_Click(object sender, RoutedEventArgs e)
         {
@@ -391,6 +406,24 @@ namespace test2
              }
          }
             */
+        }
+
+        private void tab2DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                list = (Work)tab2DataGrid.SelectedItems[0];
+                var o = tab2DataGrid.SelectedIndex + 1;
+                tab2TextBoxNumber.Text = o.ToString();
+                //MessageBox.Show(o.ToString());
+                var indexx = tab2DataGrid.SelectedIndex;
+                //supp.Text = indexx.ToString();
+
+            }
+            catch
+            {
+
+            }
         }
     }
 }

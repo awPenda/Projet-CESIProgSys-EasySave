@@ -58,5 +58,77 @@
     "NbFilesLeftToDo": "0",
     "Progression": "100%",
     "TimeToCrypt": "00:00:00.8993433"
+  },
+  {
+    "Name": "fsfsfs",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "17/12/2021 00:49:23",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0317411"
+  },
+  {
+    "Name": "acel",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "17/12/2021 00:50:39",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0338054"
+  },
+  {
+    "Name": "zebiii",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "17/12/2021 01:00:52",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0319698"
+  },
+  {
+    "Name": "helkj",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "17/12/2021 01:16:24",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0307096"
+  },
+  {
+    "Name": "hamiche",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "C:\\Source",
+    "Time": "17/12/2021 02:38:40",
+    "State": "Active",
+    "TotalFilesToCopy": "1",
+    "TotalFilesSize": "11",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0407140"
+  },
+  {
+    "Name": "amineee",
+    "SourceFilePath": "C:\\Destination",
+    "TargetFilePath": "D:\\PfSense",
+    "Time": "17/12/2021 02:51:15",
+    "State": "Active",
+    "TotalFilesToCopy": "16",
+    "TotalFilesSize": "2879798570",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": null
   }
 ]
