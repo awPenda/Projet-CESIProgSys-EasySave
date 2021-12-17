@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RQ+DSXDaPAReRUpay4gaIAyLWhjIRLq6eUApbZSWsdWdedk7Bsi4jdSQwh4TjWOjwupwGgzUKVz3md3kuOcEKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ameli\\Desktop\\BackupEasySaveV3\\project\\test2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ameli\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ameli\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.0\\ookii.dialogs.wpf.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

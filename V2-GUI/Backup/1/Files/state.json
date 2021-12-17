@@ -1,0 +1,222 @@
+[
+  {
+    "Name": "firstTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source1",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 21:59:40",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "secondTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:00:18",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "thirdTest",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source3",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 21:58:39",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "Full",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 21:58:39",
+    "State": "END",
+    "TotalFilesToCopy": "9",
+    "TotalFilesSize": "8010",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "851",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:10:17",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "12",
+    "TotalFilesSize": "10680",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "487814",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\source2",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\source3",
+    "Time": "16/12/2021 22:10:34",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "154851561",
+    "SourceFilePath": "D:\\bibliothèque\\cesi\\cours\\A3\\projet_Admin_Système\\CER\\CER-pdf-AdminSys",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:12:29",
+    "State": "END",
+    "TotalFilesToCopy": "8",
+    "TotalFilesSize": "11096618",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "5415",
+    "SourceFilePath": "D:\\bibliothèque\\images\\dessins\\testlogobde2022\\almostfinished\\final\\logo-cesi-lille-2021-2022",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\source2",
+    "Time": "16/12/2021 22:12:28",
+    "State": "END",
+    "TotalFilesToCopy": "14",
+    "TotalFilesSize": "141169675",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "56",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\source1",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:12:27",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "15",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:26:08",
+    "State": "END",
+    "TotalFilesToCopy": "34",
+    "TotalFilesSize": "152276973",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "425",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:26:08",
+    "State": "END",
+    "TotalFilesToCopy": "34",
+    "TotalFilesSize": "152276973",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "548741",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:33:17",
+    "State": "END",
+    "TotalFilesToCopy": "34",
+    "TotalFilesSize": "152276973",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "215215",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:26:10",
+    "State": "END",
+    "TotalFilesToCopy": "34",
+    "TotalFilesSize": "152276973",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "7125",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:26:08",
+    "State": "END",
+    "TotalFilesToCopy": "34",
+    "TotalFilesSize": "152276973",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "8754156",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:36:43",
+    "State": "END",
+    "TotalFilesToCopy": "9",
+    "TotalFilesSize": "8010",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "zefgb",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\source2",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:55:55",
+    "State": "END",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2670",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "515151",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "16/12/2021 22:56:03",
+    "State": "END",
+    "TotalFilesToCopy": "9",
+    "TotalFilesSize": "8010",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%"
+  },
+  {
+    "Name": "fghjkl",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\others",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "17/12/2021 00:38:49",
+    "State": "Active",
+    "TotalFilesToCopy": "4680",
+    "TotalFilesSize": "491939723",
+    "NbFilesLeftToDo": "4382",
+    "Progression": "7%"
+  },
+  {
+    "Name": "dfghj,",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\blender.crt",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "17/12/2021 00:45:33",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "9",
+    "TotalFilesSize": "1414672",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  },
+  {
+    "Name": "2665",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile\\2.93",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "17/12/2021 00:45:51",
+    "State": "INACTIVE",
+    "TotalFilesToCopy": "1287",
+    "TotalFilesSize": "76260807",
+    "NbFilesLeftToDo": "0",
+    "Progression": "0%"
+  }
+]

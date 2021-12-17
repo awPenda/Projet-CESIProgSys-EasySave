@@ -1,0 +1,767 @@
+[
+  {
+    "Name": "dfsdfsf",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 22:39:06",
+    "TimeToCrypt": "00:00:00.0308560"
+  },
+  {
+    "Name": "uhuj",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.24",
+    "time": "16/12/2021 22:48:21",
+    "TimeToCrypt": "00:00:00.0266475"
+  },
+  {
+    "Name": "uhuj",
+    "FileSource": "C:\\Destination",
+    "FileTarget": "C:\\Source",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.24",
+    "time": "16/12/2021 22:48:24",
+    "TimeToCrypt": "00:00:00.2670532"
+  },
+  {
+    "Name": "uhu",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.03",
+    "time": "16/12/2021 22:49:24",
+    "TimeToCrypt": "00:00:00.0271381"
+  },
+  {
+    "Name": "uhu",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.03",
+    "time": "16/12/2021 22:49:24",
+    "TimeToCrypt": "00:00:00.0651106"
+  },
+  {
+    "Name": "fkqisfjisksf",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 22:54:08",
+    "TimeToCrypt": "00:00:00.0285399"
+  },
+  {
+    "Name": "fkqisfjisksf",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "38127",
+    "FileTransferTime": "00:00:00.04",
+    "time": "16/12/2021 22:54:09",
+    "TimeToCrypt": "00:00:00.0695536"
+  },
+  {
+    "Name": "adel",
+    "FileSource": "C:\\Source",
+    "FileTarget": "C:\\Destination",
+    "FileSize": "11",
+    "FileTransferTime": "00:00:00.90",
+    "time": "16/12/2021 23:16:27",
+    "TimeToCrypt": "00:00:00.8993433"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.0911001"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.2039378"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.3167755"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:26",
+    "TimeToCrypt": "00:00:00.0080330"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:27",
+    "TimeToCrypt": "00:00:00.0372664"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:27",
+    "TimeToCrypt": "00:00:00.0664998"
+  },
+  {
+    "Name": "dfbgn",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:35:30",
+    "TimeToCrypt": "00:00:00.0152860"
+  },
+  {
+    "Name": "dfbgn",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:35:30",
+    "TimeToCrypt": "00:00:00.0549616"
+  },
+  {
+    "Name": "dfbgn",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:35:30",
+    "TimeToCrypt": "00:00:00.0946372"
+  },
+  {
+    "Name": "ygh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:36:29",
+    "TimeToCrypt": "00:00:00.0158818"
+  },
+  {
+    "Name": "ygh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:36:29",
+    "TimeToCrypt": "00:00:00.0491288"
+  },
+  {
+    "Name": "ygh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:36:29",
+    "TimeToCrypt": "00:00:00.0823758"
+  },
+  {
+    "Name": "jbnj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:37:39",
+    "TimeToCrypt": "00:00:00.0143791"
+  },
+  {
+    "Name": "jbnj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:37:39",
+    "TimeToCrypt": "00:00:00.0486172"
+  },
+  {
+    "Name": "jbnj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 01:37:39",
+    "TimeToCrypt": "00:00:00.0828553"
+  },
+  {
+    "Name": "15",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:03:44",
+    "TimeToCrypt": "00:00:00.0179112"
+  },
+  {
+    "Name": "15",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:03:44",
+    "TimeToCrypt": "00:00:00.0645515"
+  },
+  {
+    "Name": "15",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:03:44",
+    "TimeToCrypt": "00:00:00.1111918"
+  },
+  {
+    "Name": "4545",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 02:23:47",
+    "TimeToCrypt": "00:00:00.0126943"
+  },
+  {
+    "Name": "4545",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 02:23:47",
+    "TimeToCrypt": "00:00:00.0521841"
+  },
+  {
+    "Name": "4545",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.03",
+    "time": "17/12/2021 02:23:48",
+    "TimeToCrypt": "00:00:00.0916739"
+  },
+  {
+    "Name": "7812",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:28:46",
+    "TimeToCrypt": "00:00:00.0190020"
+  },
+  {
+    "Name": "7812",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:28:46",
+    "TimeToCrypt": "00:00:00.0653837"
+  },
+  {
+    "Name": "7812",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:28:46",
+    "TimeToCrypt": "00:00:00.1117654"
+  },
+  {
+    "Name": "789",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:32:51",
+    "TimeToCrypt": "00:00:00.0129539"
+  },
+  {
+    "Name": "789",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:32:51",
+    "TimeToCrypt": "00:00:00.0637859"
+  },
+  {
+    "Name": "789",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:32:52",
+    "TimeToCrypt": "00:00:00.1146179"
+  },
+  {
+    "Name": "95620",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.0133832"
+  },
+  {
+    "Name": "95620",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.0636448"
+  },
+  {
+    "Name": "95620",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.1139064"
+  },
+  {
+    "Name": "gvh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.0127136"
+  },
+  {
+    "Name": "gvh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.0790791"
+  },
+  {
+    "Name": "gvh",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:41:45",
+    "TimeToCrypt": "00:00:00.1454446"
+  },
+  {
+    "Name": "789456",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:48:31",
+    "TimeToCrypt": "00:00:00.0133343"
+  },
+  {
+    "Name": "789456",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:48:31",
+    "TimeToCrypt": "00:00:00.0657332"
+  },
+  {
+    "Name": "789456",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:48:31",
+    "TimeToCrypt": "00:00:00.1181321"
+  },
+  {
+    "Name": "78",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:49:25",
+    "TimeToCrypt": "00:00:00.0141220"
+  },
+  {
+    "Name": "78",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:49:25",
+    "TimeToCrypt": "00:00:00.0600338"
+  },
+  {
+    "Name": "78",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:49:25",
+    "TimeToCrypt": "00:00:00.1059456"
+  },
+  {
+    "Name": "41",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.07",
+    "time": "17/12/2021 02:51:27",
+    "TimeToCrypt": null
+  },
+  {
+    "Name": "xfcgf",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.01",
+    "time": "17/12/2021 02:51:27",
+    "TimeToCrypt": null
+  },
+  {
+    "Name": "250",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:52:26",
+    "TimeToCrypt": "00:00:00.0126368"
+  },
+  {
+    "Name": "250",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:52:26",
+    "TimeToCrypt": "00:00:00.0637487"
+  },
+  {
+    "Name": "250",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.05",
+    "time": "17/12/2021 02:52:26",
+    "TimeToCrypt": "00:00:00.1148606"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.0243369"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.0874799"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.1506229"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:27",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.2137659"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.2769089"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.3400519"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.4031949"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.4663379"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.5294809"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.5926239"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.6557669"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:28",
+    "TimeToCrypt": "00:00:00.6557669"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:29",
+    "TimeToCrypt": "00:00:00.6557669"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:29",
+    "TimeToCrypt": "00:00:00.7189099"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:29",
+    "TimeToCrypt": "00:00:00.7820529"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:29",
+    "TimeToCrypt": "00:00:00.8451959"
+  },
+  {
+    "Name": "1",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\AtelierDesLoutres",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "50911978",
+    "FileTransferTime": "00:00:00.06",
+    "time": "17/12/2021 02:52:29",
+    "TimeToCrypt": "00:00:00.9083389"
+  },
+  {
+    "Name": "dfghj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:56:18",
+    "TimeToCrypt": "00:00:00.0157941"
+  },
+  {
+    "Name": "dfghj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:56:18",
+    "TimeToCrypt": "00:00:00.0619679"
+  },
+  {
+    "Name": "dfghj",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.04",
+    "time": "17/12/2021 02:56:18",
+    "TimeToCrypt": "00:00:00.1081417"
+  }
+]
