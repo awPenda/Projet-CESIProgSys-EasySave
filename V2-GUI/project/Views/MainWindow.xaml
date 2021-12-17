@@ -105,8 +105,16 @@
                             </Style>
                         </Button.Resources>
                     </Button>
+                    <Button x:Name="tab2ButtonResume" Content="Resume" HorizontalAlignment="Left" Margin="191,247,0,0" VerticalAlignment="Top" Width="106" BorderBrush="#009d4f" Background="#009d4f"  Foreground="White" Height="23" Click="tab2ButtonResume_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
                     <!-- DataGrid to see data we can get from JSON -->
                     <DataGrid Name="tab2DataGrid" Margin="260,0,0,0" BorderThickness="1,0,1,1" AutomationProperties.Name="DataGridViewTab2Add" Height="344" VerticalAlignment="Center" HorizontalAlignment="Left" Width="331" Loaded="tab2DataGrid_Loaded" LoadingRow="tab2DataGrid_LoadingRow" Grid.Column="1" SelectionChanged="tab2DataGrid_SelectionChanged" />
+
                 </Grid>
             </TabItem>
 

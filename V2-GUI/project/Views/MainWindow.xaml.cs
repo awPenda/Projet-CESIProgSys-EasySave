@@ -87,14 +87,17 @@ namespace test2
 
         }
 
-
+        public int pgBarValue = 0;
         //tab2 run save work
         private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
+
         { /*
+
             test2.EasySave exeseqWork = new test2.EasySave();
             try
             {
                 exeseqWork.ExecuteAllWork();
+                tab2ProgessBar.Value = exeseqWork.change_pgBarValue();
 
                 MessageBox.Show(lang.printExecutedworks);
                 tab2DataGrid_Loaded(sender, e);
@@ -109,6 +112,7 @@ namespace test2
 
         private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
         {
+            pgBarValue = 0;
             if (tab2TextBoxNumber.Text != "")
             {
                 test2.EasySave exeWork = new test2.EasySave();
@@ -125,12 +129,10 @@ namespace test2
                 tab2TextBoxNumber.Text = "";
 
                 tab1SaveWork_Loaded(sender, e);
+
             }
             else
             {
-
-
-
                 MessageBox.Show(lang.printFillOut);
 
             }
@@ -139,12 +141,23 @@ namespace test2
 
         private void tab2ButtonPause_Click(object sender, RoutedEventArgs e)
         {
-
+            EasySave easySave = new EasySave();
+            easySave.pauseThread();
+            MessageBox.Show(lang.printPaused);
         }
 
         private void tab2ButtonStop_Click(object sender, RoutedEventArgs e)
         {
+            EasySave easySave = new EasySave();
+            easySave.stopThread();
+            MessageBox.Show(lang.printStop);
+        }
 
+        private void tab2ButtonResume_Click(object sender, RoutedEventArgs e)
+        {
+            EasySave easySave = new EasySave();
+            easySave.resumeThread();
+            MessageBox.Show(lang.printResume);
         }
 
         //tab3 Settings 
@@ -178,6 +191,7 @@ namespace test2
             tab2LabelProgessBar.Content = "Progression";
             tab2ButtonPause.Content = "Pause";
             tab2ButtonStop.Content = "Stop";
+            tab2ButtonResume.Content = "Reprendre";
             tab3ButtonFrench.Content = "Français";
             tab3ButtonEnglish.Content = "Anglais";
             tab3ButtonUserGuide.Content = "Ouvrir le guide utilisateur";
@@ -216,6 +230,7 @@ namespace test2
             tab2LabelProgessBar.Content = "Progress";
             tab2ButtonPause.Content = "Pause";
             tab2ButtonStop.Content = "Stop";
+            tab2ButtonResume.Content = "Resume";
             tab3ButtonFrench.Content = "French";
             tab3ButtonEnglish.Content = "English";
             tab3ButtonUserGuide.Content = "Open User Guide";

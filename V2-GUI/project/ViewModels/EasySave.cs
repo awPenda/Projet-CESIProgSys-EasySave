@@ -15,6 +15,7 @@ namespace test2
 
     class EasySave
     {
+
         private static EasySave instance = null;
         public static EasySave Getinstance()
         {
@@ -24,6 +25,7 @@ namespace test2
             }
             return instance;
         }
+
 
 
 
@@ -161,7 +163,8 @@ namespace test2
 
         public void ExecuteWork(string inputUtilisateur) // a method that will allow to execute a backupwork created
         {
-            if (Process.GetProcessesByName("Calculator").Length == 0)
+            //beginning of critical section
+            lock (_object)
             {
             var j = File.ReadAllText(Settings.filePath2); //Read the JSON setting file
             var met = JsonConvert.DeserializeObject<List<Settings>>(j) ?? new List<Settings>(); //convert a string into an object for JSON
@@ -190,15 +193,30 @@ namespace test2
                         var jsonDataState2 = File.ReadAllText(Etat.filePath); //Read the JSON State file
                         var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
 
-                        int indexState = 0;
-                        for (int i = 0; i < stateList2.Count; i++)
+                    if (workList.Count >= Convert.ToInt32(inputUtilisateur)) //this condition allow to the user to choose the exact row in order to execute the backupwork chosen
+                    {
+                        int index = Convert.ToInt32(inputUtilisateur) - 1;
+                        string sourceDir = workList.ElementAt(index).repS;
+                        string backupDir = workList.ElementAt(index).repC;
+                        string name = workList.ElementAt(index).name;
+                        long filesNum = Directory.GetFiles(sourceDir, "*", SearchOption.AllDirectories).Length;
+
+                        //this condition is used to execute the type of backup chosen in the creation 
+                        if (workList.ElementAt(Convert.ToInt32(inputUtilisateur) - 1).type == "Differential")
                         {
-                            if (stateList2[i].Name == workList[index].name)
+                            var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+
+                            int indexState = 0;
+                            for (int i = 0; i < stateList2.Count; i++)
                             {
-                                indexState = i;
-                                break;
+                                if (stateList2[i].Name == workList[index].name)
+                                {
+                                    indexState = i;
+                                    break;
+                                }
                             }
-                        }
+
 
                         stateList2[indexState].State = "Active";
                         string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
@@ -220,13 +238,21 @@ namespace test2
 
                         int indexState = 0;
                         for (int i = 0; i < stateList2.Count; i++)
+
                         {
-                            if (stateList2[i].Name == workList[index].name)
+                            var jsonDataState2 = File.ReadAllText(Etat.filePath);
+                            var stateList2 = JsonConvert.DeserializeObject<List<Etat>>(jsonDataState2) ?? new List<Etat>();
+
+                            int indexState = 0;
+                            for (int i = 0; i < stateList2.Count; i++)
                             {
-                                indexState = i;
-                                break;
+                                if (stateList2[i].Name == workList[index].name)
+                                {
+                                    indexState = i;
+                                    break;
+                                }
                             }
-                        }
+
 
                         stateList2[indexState].State = "Active";
                         string strResultJsonState2 = JsonConvert.SerializeObject(stateList2, Formatting.Indented);
@@ -239,25 +265,36 @@ namespace test2
                         fullBackups[fullBackups.Count - 1].Sauvegarde(sourceDir, backupDir, true, indexState, filesNum, index, Name);
                         Valuer_recup = Name;
 
+
                     }
+                    else
+                    {   // Switch the language of the outpoot according to the choice of the user when he started the program
 
 
                 }
                
+
             }
-            else
+            */
+            for (int i = 0; i < q; i += 1)
             {
+
                 //mettre en pause puis lancer quand le logiciel métier est fermé
                 MessageBox.Show("ImpossibleToRunBuissnessSoftwareRunning");
+
             }
+        }
+
+        public static void nothing() { }
+
+        public void stopThread()
+        {
 
 
 
 
-
-
-
-
+            */
+        }
 
 
 
