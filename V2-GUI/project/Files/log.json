@@ -70,5 +70,59 @@
     "FileTransferTime": "00:00:00.90",
     "time": "16/12/2021 23:16:27",
     "TimeToCrypt": "00:00:00.8993433"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.0911001"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.2039378"
+  },
+  {
+    "Name": "fghjkl",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "0",
+    "FileTransferTime": "00:00:00.11",
+    "time": "17/12/2021 01:12:34",
+    "TimeToCrypt": "00:00:00.3167755"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:26",
+    "TimeToCrypt": "00:00:00.0080330"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:27",
+    "TimeToCrypt": "00:00:00.0372664"
+  },
+  {
+    "Name": "cryteo",
+    "FileSource": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "FileTarget": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "FileSize": "2286",
+    "FileTransferTime": "00:00:00.02",
+    "time": "17/12/2021 01:16:27",
+    "TimeToCrypt": "00:00:00.0664998"
   }
 ]

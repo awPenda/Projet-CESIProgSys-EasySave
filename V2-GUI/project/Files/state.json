@@ -58,5 +58,29 @@
     "NbFilesLeftToDo": "0",
     "Progression": "100%",
     "TimeToCrypt": "00:00:00.8993433"
+  },
+  {
+    "Name": "fghjkl",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile\\sourceFile2",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "17/12/2021 01:12:34",
+    "State": "Active",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "0",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.3167755"
+  },
+  {
+    "Name": "cryteo",
+    "SourceFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\sourceFile",
+    "TargetFilePath": "C:\\Users\\ameli\\Documents\\GitHub\\CESIProgSys-EasySave\\files\\targetFile",
+    "Time": "17/12/2021 01:16:27",
+    "State": "Active",
+    "TotalFilesToCopy": "3",
+    "TotalFilesSize": "2286",
+    "NbFilesLeftToDo": "0",
+    "Progression": "100%",
+    "TimeToCrypt": "00:00:00.0664998"
   }
 ]
