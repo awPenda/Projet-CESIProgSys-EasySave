@@ -199,31 +199,90 @@ namespace test2
             //get json data
             var workList = JsonConvert.DeserializeObject<List<Work>>(File.ReadAllText(Work.filePath)) ?? new List<Work>();
             int q = workList.Count;
+            /*
             //numbers of the save work we want to run
             List<int> saveWorkNumber = new List<int>();
             for (int i = 1; i < q + 1; i += 2)
             {
                 saveWorkNumber.Add(i);
-                saveWorkNumber.Add(i + 1);
+                if (i+1 < q)
+                {
+                    saveWorkNumber.Add(i + 1);
+                }
             }
 
             //run threads
             //for (int i = 1; i < saveWorkNumber.Count / 2; i++)
-            for (int i = 1; i < saveWorkNumber.Count / 2; i++)
+            for (int i = 1; i <= saveWorkNumber.Count; i+=2)
             {
-                threadA = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i])));
+                threadA = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i-1])));
                 threadA.Start();
                 if (i < q)
                 {
-                    threadB = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i + 1])));
+                    threadB = new Thread(() => ExecuteWork(Convert.ToString(saveWorkNumber[i])));
                     threadB.Start();
                 }
 
-                pgBarValue += 100 / q;
+                pgBarValue += 100;
 
 
                 //pg.tab2ProgessBar.Value += 100;
             }
+            */
+            for (int i = 0; i < q; i += 1)
+            {
+                threadA = new Thread(() => ExecuteWork(Convert.ToString(i)));
+                if (i + 1 < q)
+                {
+                    threadB = new Thread(() => ExecuteWork(Convert.ToString(i+1)));
+                    threadB.Start();
+                }
+                threadA.Start();
+                pgBarValue += 100;
+            }
+        }
+
+        public static void nothing() { }
+
+        public void stopThread()
+        {
+
+        }
+        public bool pausedThread;
+        public void resumeThread()
+        {
+            pausedThread = false;
+            //throw new ThreadInterruptedException();
+        }
+        public void pauseThread()
+        {
+            while (pausedThread == true)
+            {
+                Thread.Sleep(Timeout.Infinite);
+            }
+            /*
+            try
+            {
+                MessageBox.Show("Thread '{0} Sleeping.", Thread.CurrentThread.Name);
+                Thread.Sleep(Timeout.Infinite);
+                
+
+            }
+            catch (ThreadInterruptedException)
+            {
+                MessageBox.Show("Thread '{0}' awoken.",Thread.CurrentThread.Name);
+            }
+            catch (ThreadAbortException)
+            {
+                MessageBox.Show("Thread '{0}' aborted.",Thread.CurrentThread.Name);
+            }
+            finally
+            {
+                MessageBox.Show("Thread '{0}' executing finally block.", Thread.CurrentThread.Name);
+            }
+            MessageBox.Show("Thread '{0} finishing normal execution.",Thread.CurrentThread.Name);
+
+            */
         }
 
         public int change_pgBarValue()

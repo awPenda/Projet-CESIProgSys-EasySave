@@ -119,12 +119,23 @@ namespace test2
 
         private void tab2ButtonPause_Click(object sender, RoutedEventArgs e)
         {
-
+            EasySave easySave = new EasySave();
+            easySave.pauseThread();
+            MessageBox.Show(lang.printPaused);
         }
 
         private void tab2ButtonStop_Click(object sender, RoutedEventArgs e)
         {
+            EasySave easySave = new EasySave();
+            easySave.stopThread();
+            MessageBox.Show(lang.printStop);
+        }
 
+        private void tab2ButtonResume_Click(object sender, RoutedEventArgs e)
+        {
+            EasySave easySave = new EasySave();
+            easySave.resumeThread();
+            MessageBox.Show(lang.printResume);
         }
 
         //tab3 Settings 
@@ -158,6 +169,7 @@ namespace test2
             tab2LabelProgessBar.Content = "Progression";
             tab2ButtonPause.Content = "Pause";
             tab2ButtonStop.Content = "Stop";
+            tab2ButtonResume.Content = "Reprendre";
             tab3ButtonFrench.Content = "Français";
             tab3ButtonEnglish.Content = "Anglais";
             tab3ButtonUserGuide.Content = "Ouvrir le guide utilisateur";
@@ -196,6 +208,7 @@ namespace test2
             tab2LabelProgessBar.Content = "Progress";
             tab2ButtonPause.Content = "Pause";
             tab2ButtonStop.Content = "Stop";
+            tab2ButtonResume.Content = "Resume";
             tab3ButtonFrench.Content = "French";
             tab3ButtonEnglish.Content = "English";
             tab3ButtonUserGuide.Content = "Open User Guide";
