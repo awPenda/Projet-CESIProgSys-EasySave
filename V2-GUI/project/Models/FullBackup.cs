@@ -183,13 +183,13 @@ namespace test2
                     var jsonDataState3 = File.ReadAllText(Work.filePath); //Read the JSON file
                     var stateList3 = JsonConvert.DeserializeObject<List<Work>>(jsonDataState3) ?? new List<Work>(); //convert a string into an object for JSON
 
-                    try {
-                        stateList3.Remove(stateList3[getIndex]);
+                  /*  try {
+                      //  stateList3.Remove(stateList3[getIndex]);
                     }
                      catch
                     {
                         //MessageBox.Show(getIndex.ToString());
-                    }
+                    }*/
                     
 
                     string strResultJsonState3 = JsonConvert.SerializeObject(stateList3, Formatting.Indented);  //convert an object into a string for JSON
