@@ -74,14 +74,16 @@ namespace test2
 
         }
 
-
+        public int pgBarValue = 0;
         //tab2 run save work
         private void tab2ButtonStartSequentialRun_Click(object sender, RoutedEventArgs e)
         {
+            pgBarValue = 0;
             test2.EasySave exeseqWork = new test2.EasySave();
             try
             {
                 exeseqWork.ExecuteAllWork();
+                tab2ProgessBar.Value = exeseqWork.change_pgBarValue();
 
                 MessageBox.Show(lang.printExecutedworks);
                 tab2DataGrid_Loaded(sender, e);
@@ -96,27 +98,20 @@ namespace test2
 
         private void tab2ButtonStartSingleRun_Click(object sender, RoutedEventArgs e)
         {
+            pgBarValue = 0;
             if (tab2TextBoxNumber.Text != "")
             {
                 test2.EasySave exeWork = new test2.EasySave();
 
-
-
-               
                     exeWork.ExecuteWork(tab2TextBoxNumber.Text);
-                    tab1SaveWork_Loaded(sender, e);
+                pgBarValue += 100;
+                tab2ProgessBar.Value = pgBarValue;
+
+                tab1SaveWork_Loaded(sender, e);
                     MessageBox.Show(tab2TextBoxNumber.Text + lang.printHasBeenExecuted);
-
-                
-
-
-                
             }
             else
             {
-
-
-
                 MessageBox.Show(lang.printFillOut);
 
             }
